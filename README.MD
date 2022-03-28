@@ -2,20 +2,18 @@
 
 ## DESCRIPTION:
 - Vanilla Website for Marizoo's Web Dev portfolio
-- [Youtube Video of the App](https://youUUUUUUUUUUUUUUU)
+- [Youtube Video of the App](https://youtu.be/06EkG4IqroE)
 - FYI: Images & Private data are erased from this repo.
 
-
-## TECH STACKS:
+s## TECH STACKS:
 - HTML + CSS + JS
 - Libraries:
     - swiperjs
-    - scrollreveal
     - mixitupjs
 
 ## PROGRESS:
 - Done: 100%.
-- REsponsive: 100%.
+- Responsive: 100%.
 
 
 ## View other projects:

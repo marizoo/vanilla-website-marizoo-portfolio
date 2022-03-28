@@ -882,13 +882,6 @@ display: flex;
   justify-content: center;
   color: var(--color-text-light);
 }
-/* .projects__button1{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-text-light);
-  font-weight: 400;
-} */
 .projects__button a{
   display: flex;
   align-items: center;
@@ -940,7 +933,6 @@ display: flex;
   filter: invert(1);
   max-width: 2rem;
 }
-
 
 /* Active link featured ------------- */
 .active-featured{
@@ -1112,7 +1104,7 @@ opacity: 1;
     .about__card-img:hover{
       transform: scale(1.025);
     }
-    /* ? about card middle-container */
+    /* about card middle-container */
     .about__card-middle-container{
       height: 140px;
       position: absolute;
@@ -1127,10 +1119,7 @@ opacity: 1;
       font-weight: var(--fw-bolder);
       font-size: var(--fz-normal);
     }
-    
-    .about__card-data-story-box{
-      
-    }
+    .about__card-data-story-box{}
     .about__card-data-story-box p{
       font-size: .85rem;
       margin-bottom: .5rem;
@@ -1163,9 +1152,6 @@ opacity: 1;
     .about__card-data-group i{
       font-size: 1rem;
     }
-   /* .about__card-data-group-icon-styledcomp{
-    width: 1rem;
-   } */
    
     .about__card-data-group-social{
       display: flex;
@@ -1187,7 +1173,6 @@ opacity: 1;
       align-items: center;
       justify-content: space-between;
       background: var(--color-shape);
-      
     }
     .about__card-link{
       font-size: var(--fz-small);
@@ -1244,7 +1229,6 @@ opacity: 1;
    color: var(--color-text-light);
     border: 0;
     border-radius: 5px;
-
  }
  
  .contact__form-textarea{
@@ -1257,7 +1241,6 @@ opacity: 1;
   color: var(--color-text-light);
   border: 0;
   border-radius: 5px;
-
  }
  .contact__form-textarea:focus,
  .contact__form-input:focus{
@@ -1269,7 +1252,6 @@ opacity: 1;
    cursor: pointer;
    margin: 1rem 0;
    box-shadow: 0 2px 15px rgb(1 1 1 / 15%);
-
  }
 
 
