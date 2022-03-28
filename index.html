@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--=============== FAVICON ===============-->
+        <link
+            rel="shortcut icon"
+            href="./assets/img/favicon.ico"
+            type="image/x-icon"
+        />
+        <!--=============== BOX ICONS ===============-->
+        <link
+            href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <title>Marizoo</title>
+    </head>
+    <body>
+        <!--==================== HEADER & NAV ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    Marizoo
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__menu-list">
+                        <li class="nav__menu-list-item">
+                            <a href="#home" class="nav__link">Home</a>
+                        </li>
+
+                        <li class="nav__menu-list-item">
+                            <a href="#overview" class="nav__link">Overview</a>
+                        </li>
+                        <li class="nav__menu-list-item">
+                            <a href="#projects" class="nav__link">Projects</a>
+                        </li>
+                        <li class="nav__menu-list-item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__menu-list-item">
+                            <a href="#contact" class="nav__link">Contact Me</a>
+                        </li>
+                    </ul>
+                    <!-- Close Icon -->
+                    <div class="nav__menu-close" id="nav-close">
+                        <i class="bx bx-x"></i>
+                    </div>
+                </div>
+                <!-- Theme Icon -->
+                <div class="nav__theme" id="nav-theme">
+                    <i class="bx bx-moon" id="nav-theme-icon"></i>
+                </div>
+                <!-- Menu Toggle -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bx-menu-alt-right"></i>
+                </div>
+                <!-- Menuu CTA -->
+                <button class="button nav__button-contact">
+                    <a href="#contact">contact me</a>
+                </button>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="shape shape__big"></div>
+                <div class="shape shape__small"></div>
+                <div class="home__container container">
+                    <div class="home__data">
+                        <div class="home__data-top-container">
+                            <h2 class="home__title">This is Marizoo, a Front-End Web Developer based in Bali.</h2>
+                            <h3 class="home__subtitle">She builds responsive user interfaces for websites and apps.</h3>
+                        </div>  
+                        <div class="home__data-bottom-container">
+                            <img src="./assets/img/photos/img-mariza-motor.jpg" alt="izoo" class="home__img">
+                            <div class="home__button-container">
+                                <a href="#contact">
+                                <button class="button home__button home__button-contact">
+                                    Contact Me
+                                    
+                                </button></a>
+                                <a href="#projects">
+                                <button class="button home__button home__button-projects">
+                                    Explore Projects               
+                                </button></a> 
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </section>
+            <!--==================== OVERVIEW ====================-->
+            <!-- img box 360   -->
+            <section class="section overview" id="overview">
+                <div class="shape shape__big"></div>
+                <div class="shape shape__small"></div>
+
+                <h2 class="section__title">Overview</h2>
+                <p class="section__subtitle">Here are some of her projects</p>
+
+                <div class="overview__container container">
+                        <div class="imgBox">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./assets/img/websites/01-reactUi-08.food-website-180.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img
+                                            src="./assets/img/websites/02-BS-09.butter-180.jpg"
+                                        />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/img/websites/04-reactUi-15.business-website-180.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/img/websites/05-reactUi-55.responsive-react-website-180.jpg">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/img/websites/07-reactUi-60-reactUI-zshop-180.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/img/websites/08-Vanilla-css-12-laptop-180.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img
+                                            src="./assets/img/websites/09-vanilla-css-13-coffee-180.jpg"
+                                        />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/img/websites/12-vanilla-js-05-e-commerce-180.jpg" />
+                                    </div>
+                                </div>
+                                <!-- <div class="swiper-pagination"></div> -->
+                            </div>
+                        </div>
+                
+                    </div>
+                </section>
+            <!--==================== PROJECTS ====================-->
+            <section class="projects section" id="projects">
+                <div class="shape shape__big"></div>
+                <div class="shape shape__small"></div>
+
+                <h2 class="section__title">Projects</h2>
+                <p class="section__subtitle">Check out her projects in details</p>
+
+                <div class="projects__container container">
+                    <ul class="projects__filters">
+                        <li>
+                            <button
+                                class="projects__item active-featured"
+                                data-filter="all"
+                            >
+                                <span>All</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                class="projects__item"
+                                data-filter=".vanilla"
+                            >
+                                <i class="bx bx-popsicle"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                class="projects__item"
+                                data-filter=".reactUi"
+                            >
+                                <i class="bx bxl-react"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                class="projects__item"
+                                data-filter=".reactApp"
+                            >
+                                <i class="bx bxs-widget"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                class="projects__item"
+                                data-filter=".bootstrap"
+                            >
+                                <i class="bx bxl-bootstrap"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                class="projects__item"
+                                data-filter=".api"
+                            >
+                            <i class='bx bxl-nodejs'></i>
+                            </button>
+                        </li>
+                    </ul>
+
+                    <div class="projects__content grid">
+   
+                        <!-- Project Article 1-01.Bweery Vanilla-->
+                        <article class="projects__card mix vanilla">
+                            <div class="shape shape__smaller"></div>
+
+                            <h3 class="projects__subtitle">Vanilla UI</h3>
+                            <h1 class="projects__title">Bweery</h1>
+                            <div class="projects__img-container-box">
+                                <div class="projects__img-container">
+                                    <img
+                                        src="./assets/img/websites/08-Vanilla-css-12-laptop-180.jpg"
+                                        alt="vanilla"
+                                        class="projects__img"
+                                    />
+                                </div>
+                            </div>
+                            <h3 class="projects__info-stack">
+                                html | css | js
+                            </h3>
+                            <h3 class="projects__info-desc">
+                                Business Website <br />
+                                Beer company
+                            </h3>
+                            <div class="projects__button-container">
+                                <button
+                                    class="projects__button projects__button1"
+                                >
+                                    <a href="#"
+                                        >View more
+                                        <i class="bx bx-chevrons-right"></i
+                                    ></a>
+                                </button>
+                                <button class="projects__button">
+                                    <a href="https://github.com/marizoo/vanilla-website-beer" target="_blank"
+                                        ><i class="bx bxl-github"></i
+                                    ></a>
+                                </button>
+                                <button class="projects__button">
+                                    <a href="https://youtu.be/ShJT8ZuY8EU" target="blank"
+                                        ><i class="bx bxl-youtube"></i
+                                    ></a>
+                                </button>
+                            </div>
+                        </article>
+                        <!-- Project Article 1-02.Cafe Vanilla-->
+                        <article class="projects__card mix vanilla">
+                            <div class="shape shape__smaller"></div>
+
+                            <h3 class="projects__subtitle">Vanilla UI</h3>
+                            <h1 class="projects__title">Coffee Cafe</h1>
+                            <div class="projects__img-container-box">
+                            <div class="projects__img-container">
+                                <img
+                                    src="./assets/img/websites/09-vanilla-css-13-coffee-180.jpg"
+                                    alt="vanilla"
+                                    class="projects__img"
+                                />
+                            </div>
+                        </div>
+                            <h3 class="projects__info-stack">
+                                html | css | js
+                            </h3>
+                            <h3 class="projects__info-desc">
+                                Business website <br />
+                                Coffee shop
+                            </h3>
+                            <div class="projects__button-container">
+                                <button
+                                    class="projects__button projects__button1"
+                                >
+                                    <a href="#"
+                                        >View more
+                                        <i class="bx bx-chevrons-right"></i
+                                    ></a>
+                                </button>
+                                <button class="projects__button">
+                                    <a href="https://github.com/marizoo/vanilla-website-cafe" target="_blank"
+                                        ><i class="bx bxl-github"></i
+                                    ></a>
+                                </button>
+                                <button class="projects__button">
+                                    <a href="https://youtu.be/-TijNlW-7g8" target="blank"
+                                        ><i class="bx bxl-youtube"></i
+                                    ></a>
+                                </button>
+                            </div>
+                        </article>               
+                        <!-- Project Article 1-03.Traveleeka Vanilla-->
+                        <article class="projects__card mix vanilla">
+                            <div class="shape shape__smaller"></div>
+
+                            <h3 class="projects__subtitle">Vanilla UI</h3>
+                            <h1 class="projects__title">Traveleeka</h1>
+                        <div class="projects__img-container-box">
+                            <div class="projects__img-container">
+                                <img
+                                    src="./assets/img/websites/11-vanilla-css-15-792-180.jpg"
+                                    alt="vanilla"
+                                    class="projects__img"
+                                />
+                            </div>
+                        </div>
+                            <h3 class="projects__info-stack">
+                                html | css | js
+                            </h3>
+                            <h3 class="projects__info-desc">
+                                E-commerce website <br />
+                                Online Travel Agency
+                            </h3>
+                            <div class="projects__button-container">
+                                <button
+                                    class="projects__button projects__button1"
+                                >
+                                    <a href="#"
+                                        >View more
+                                        <i class="bx bx-chevrons-right"></i
+                                    ></a>
+                                </button>
+                                <button class="projects__button">
+                                    <a href="https://github.com/marizoo/vanilla-website-traveleeka" target="_blank"
+                                        ><i class="bx bxl-github"></i
+                                    ></a>
+                                </button>
+                                <button class="projects__button">
+                                    <a href="https://www.youtube.com/watch?v=epqvEcEi7es" target="blank"
+                                        ><i class="bx bxl-youtube"></i
+                                    ></a>
+                                </button>
+                            </div>
+                        </article>                 
+                        <!-- Project Article 2-01-COODER ReactUi-->
+                        <article class="projects__card mix reactUi">
+                            <div class="shape shape__smaller"></div>
+
+                            <h3 class="projects__subtitle">React UI</h3>
+                            <h1 class="projects__title">Cooder</h1>
+                            <div class="projects__img-container-box">
+                            <div class="projects__img-container">
+                                <img
+                                    src="./assets/img/websites/05-reactUi-55.responsive-react-website-180.jpg"
+                                    alt="react ui"
+                                    class="projects__img"
+                                />
+                            </div>
+                        </div>
+                            <h3 class="projects__info-stack">
+                                react | css-bem
+                            </h3>
+                            <h3 class="projects__info-desc">
+                                Business website <br />
+                                Coding School
+                            </h3>
+                            <div class="projects__button-container">
+                                <button
+                                    class="projects__button projects__button1"
+                                >
+                                    <a href="#"
+                                        >View more
+                                        <i class="bx bx-chevrons-right"></i
+                                    ></a>
+                                </button>
+                                <button class="projects__button">
+                                    <a href="https://github.com/marizoo/responsive-react-website" target="_blank"
+                                        ><i class="bx bxl-github"></i
+                                    ></a>
+                                </button>
+                                <button class="projects__button">
+                                    <a href="https://www.youtube.com/watch?v=2Ao0ZuziuQg"  target="_blank"
+                                        ><i class="bx bxl-youtube"></i
+                                    ></a>
+                                </button>
+                            </div>
+                        </article>
+                        <!-- Project Article 2-02-LAMPA ReactUi-->
+                        <article class="projects__card mix reactUi">
+                            <div class="shape shape__smaller"></div>
+
+                            <h3 class="projects__subtitle">React UI</h3>
+                            <h1 class="projects__title">Lamp Shop</h1>
+                            <div class="projects__img-container-box">
+                            <div class="projects__img-container">
+                                <img
+                                    src="./assets/img/websites/06-reactUi-59-lampa-180.jpg"
+                                    alt="react ui"
+                                    class="projects__img"
+                                />
+                            </div>
+                        </div>
+                            <h3 class="projects__info-stack">
+                                react | styled-comp
+                            </h3>
+                            <h3 class="projects__info-desc">
+                                Business website <br />
+                                Lamp boutique shop
+                            </h3>
+                            <div class="projects__button-container">
+                                <button
+                                    class="projects__button projects__button1"
+                                >
+                                    <a href="#"
+                                        >View more
+                                        <i class="bx bx-chevrons-right"></i
+                                    ></a>
+                                </button>
+                                <button class="projects__button">
+                                    <a href="https://github.com/marizoo/react-website-lampa" target="_blank"
+                                        ><i class="bx bxl-github"></i
+                                    ></a>
+                                </button>
+                                <button class="projects__button">
+                                    <a href="https://youtu.be/jYM-pCVFeM8"  target="_blank"
+                                        ><i class="bx bxl-youtube"></i
+                                    ></a>
+                                </button>
+                            </div>
+                        </article>
+                        <!-- Project Article 2-03-Z-shop ReactUi-->
+                        <article class="projects__card mix reactUi">
+                            <div class="shape shape__smaller"></div>
+
+                            <h3 class="projects__subtitle">React UI</h3>
+                            <h1 class="projects__title">Z-shop</h1>
+                            <div class="projects__img-container-box">
+                            <div class="projects__img-container">
+                                <img
+                                    src="./assets/img/websites/07-reactUi-60-reactUI-zshop-180.jpg"
+                                    alt="react ui"
+                                    class="projects__img"
+                                />
+                            </div>
+                        </div>
+                            <h3 class="projects__info-stack">
+                                react | styled-comp
+                            </h3>
+                            <h3 class="projects__info-desc">
+                               E-commerce website <br />
+                               Small Business
+                            </h3>
+                            <div class="projects__button-container">
+                                <button
+                                    class="projects__button projects__button1"
+                                >
+                                    <a href="#"
+                                        >View more
+                                        <i class="bx bx-chevrons-right"></i
+                                    ></a>
+                                </button>
+                                <button class="projects__button">
+                                    <a href="https://github.com/marizoo/react-website-z-shop" target="_blank"
+                                        ><i class="bx bxl-github"></i
+                                    ></a>
+                                </button>
+                                <button class="projects__button">
+                                    <a href="https://youtu.be/HvuW9dxYcVg"  target="_blank"
+                                        ><i class="bx bxl-youtube"></i
+                                    ></a>
+                                </button>
+                            </div>
+                        </article>
+                        <!-- Project Article 3-01-Scuba-Quiz React App-->
+                        <article class="projects__card-long mix reactApp">
+                            <div class="shape shape__smaller"></div>
+
+                            <h3 class="projects__subtitle">React App</h3>
+                            <h1 class="projects__title">Scuba Quiz</h1>
+                            <div class="projects__img-container-box">
+                            <div class="projects__img-container-long">
+                                <img
+                                    src="./assets//img/websites/reactApp-01-53.Scuba-quiz-180.jpg"
+                                    alt="react app"
+                                    class="projects__img"
+                                />
+                            </div>
+                        </div>
+                            <h3 class="projects__info-stack">
+                                react | styled-comp
+                            </h3>
+                            <h3 class="projects__info-desc">
+                                Scuba theory quiz app. <br /> 
+                                The data is fetched from api made with nodeJS, that is published on rapidAPI.
+                            </h3>
+                            <div class="projects__button-container">
+                                <button
+                                    class="projects__button projects__button1"
+                                >
+                                    <a href="#"
+                                        >View more
+                                        <i class="bx bx-chevrons-right"></i
+                                    ></a>
+                                </button>
+                                <button class="projects__button">
+                                    <a href="https://github.com/marizoo/react-scuba-quiz" target="_blank"
+                                        ><i class="bx bxl-github"></i
+                                    ></a>
+                                </button>
+                                <button class="projects__button">
+                                    <a href="https://youtu.be/EwuJUJcZ_MU" target="_blank"
+                                        ><i class="bx bxl-youtube"></i
+                                    ></a>
+                                </button>
+                            </div>
+                        </article>
+                        <!-- Project Article 4-01-butterHelp Bootstrap-->
+                        <article class="projects__card mix bootstrap">
+                            <div class="shape shape__smaller"></div>
+
+                            <h3 class="projects__subtitle">Bootstrap</h3>
+                            <h1 class="projects__title">Butter Help</h1>
+                            <div class="projects__img-container-box">
+                            <div class="projects__img-container">
+                                <img
+                                    src="./assets/img/websites/02-BS-09.butter-180.jpg"
+                                    alt="bootstrap"
+                                    class="projects__img"
+                                />
+                            </div>
+                        </div>
+                            <h3 class="projects__info-stack">
+                                html | css | bootstrap
+                            </h3>
+                            <h3 class="projects__info-desc">
+                                Business website <br />
+                                Therapy service
+                            </h3>
+                            <div class="projects__button-container">
+                                <button
+                                    class="projects__button projects__button1"
+                                >
+                                    <a href="#"
+                                        >View more
+                                        <i class="bx bx-chevrons-right"></i
+                                    ></a>
+                                </button>
+                                <button class="projects__button">
+                                    <a href="https://github.com/marizoo/butter-help" target="_blank"
+                                        ><i class="bx bxl-github"></i
+                                    ></a>
+                                </button>
+                                <button class="projects__button">
+                                    <a href="https://youtu.be/yEGIsgT1blM" target="_blank"
+                                        ><i class="bx bxl-youtube"></i
+                                    ></a>
+                                </button>
+                            </div>
+                        </article>
+                        <!-- Project Article 4-02-zooBar Bootstrap-->
+                        <article class="projects__card mix bootstrap">
+                            <div class="shape shape__smaller"></div>
+
+                            <h3 class="projects__subtitle">Bootstrap</h3>
+                            <h1 class="projects__title">Zoo Bar</h1>
+                            <div class="projects__img-container-box">
+                            <div class="projects__img-container">
+                                <img
+                                    src="./assets/img/websites/03-BS-09.zoobar-180.jpg"
+                                    alt="bootstrap"
+                                    class="projects__img"
+                                />
+                            </div>
+                        </div>
+                            <h3 class="projects__info-stack">
+                                html | css | bootstrap
+                            </h3>
+                            <h3 class="projects__info-desc">
+                                Business website <br />
+                                Bar & Restaurant
+                            </h3>
+                            <div class="projects__button-container">
+                                <button
+                                    class="projects__button projects__button1"
+                                >
+                                    <a href="#"
+                                        >View more
+                                        <i class="bx bx-chevrons-right"></i
+                                    ></a>
+                                </button>
+                                <button class="projects__button">
+                                    <a href="https://github.com/marizoo/zoobar" target="_blank"
+                                        ><i class="bx bxl-github"></i
+                                    ></a>
+                                </button>
+                                <button class="projects__button">
+                                    <a href="https://youtu.be/0Rouvk3K6QI" target="_blank"
+                                        ><i class="bx bxl-youtube"></i
+                                    ></a>
+                                </button>
+                            </div>
+                        </article>
+                        <!-- Project Article 4-03-Interior Bootstrap-->
+                        <article class="projects__card mix bootstrap">
+                            <div class="shape shape__smaller"></div>
+
+                            <h3 class="projects__subtitle">Bootstrap</h3>
+                            <h1 class="projects__title">Interior Designer</h1>
+                            <div class="projects__img-container-box">
+                            <div class="projects__img-container">
+                                <img
+                                    src="./assets/img/websites/13-BS-bs.04.business-180.jpg"
+                                    alt="bootstrap"
+                                    class="projects__img"
+                                />
+                            </div>
+                        </div>
+                            <h3 class="projects__info-stack">
+                                html | css | bootstrap
+                            </h3>
+                            <h3 class="projects__info-desc">
+                                Business website
+                                <br /> 
+                                Interior Design Service
+                            </h3>
+                            <div class="projects__button-container">
+                                <button
+                                    class="projects__button projects__button1"
+                                >
+                                    <a href="#"
+                                        >View more
+                                        <i class="bx bx-chevrons-right"></i
+                                    ></a>
+                                </button>
+                                <button class="projects__button">
+                                    <a href="https://github.com/marizoo/animated-website" target="_blank"
+                                        ><i class="bx bxl-github"></i
+                                    ></a>
+                                </button>
+                                <button class="projects__button">
+                                    <a href="https://youtu.be/PvXD-IraTr4" target="_blank"
+                                        ><i class="bx bxl-youtube"></i
+                                    ></a>
+                                </button>
+                            </div>
+                        </article>
+                        <!-- Project Article 5-01-Scuba API-->
+                        <article class="projects__card-long mix api">
+                            <div class="shape shape__smaller"></div>
+
+                            <h3 class="projects__subtitle">API with nodeJs</h3>
+                            <h1 class="projects__title">Scuba Diving Theory</h1>
+                            <div class="projects__img-container-box">
+                            <div class="projects__img-container-long">
+                                <img
+                                    src="./assets/img/websites/api-01-scuba-all-200.jpg"
+                                    alt="API with nodeJs"
+                                    class="projects__img"
+                                />
+                            </div>
+                        </div>
+                            <h3 class="projects__info-stack">
+                                nodeJs | rapidAPI
+                            </h3>
+                            <h3 class="projects__info-desc">
+                                A scuba theory data <br />
+                                Made with nodeJS <br /> Published on rapid API
+                            </h3>
+                            <div class="projects__button-container">
+                                <button
+                                    class="projects__button projects__button1"
+                                >
+                                    <a href="#"
+                                        >View more
+                                        <i class="bx bx-chevrons-right"></i
+                                    ></a>
+                                </button>
+                                <button class="projects__button">
+                                    <a href="https://github.com/marizoo/scuba-quiz-api" target="_blank"
+                                        ><i class="bx bxl-github"></i
+                                    ></a>
+                                </button>
+                                <button class="projects__button">
+                                    <a href="https://rapidapi.com/mariza24/api/scuba-diving-quiz-version-101/" target="_blank"
+                                        ><i class='bx bx-code'></i>
+                                    </a>
+                                </button>
+                            </div>
+                        </article>
+                        <!-- Project Article End -->
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <div class="shape shape__big"></div>
+                <div class="shape shape__small"></div>
+
+                <h2 class="section__title">About</h2>
+                <p class="section__subtitle about__section-subtitle">What makes her tick</p>
+
+                <div class="about__story-Container">
+                    <div class="about__story-desc">
+                        <p class="about__story-desc-p">
+                            Marizoo gets her dopamine dope from building user interfaces and conquering her self-made bugs. 
+                        She is an introvert, but certain topics and individuals can magically turn her into a chatterbox... <br />
+                         Being outdoors, furbabies, sports and 'Suzuki Katana' car excites her!
+                        <br />
+                            Indoors, she'll be in rabbit holes / cooking / reading / doing 'diy' projects while impersonating 'Marie Kondo' and 'Whitney Houston'.
+                            
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about__cardContainer container">
+                   
+                    <!-- Card 1 marizoo -->
+                    <article class="about__card">
+                        <div class="shape shape__smaller"></div>
+                        <div class="about__card-top-container">
+                            <h1 class="about__card-title">Marizoo</h1>
+                            <h3 class="about-card-subtitle">
+                                Front-End Web Developer
+                            </h3>
+                        </div>
+                        <div class="about__card-img-container">
+                            <img
+                                src="./assets/img/photos/img-marizoo.jpg"
+                                alt="marizoo"
+                                class="about__card-img"
+                            />
+                        </div>
+
+                        <div class="about__card-middle-container">
+                            <h4 class="about__card-data-title">Tech Stack</h4>
+
+                            <div class="about__card-data-tech">
+                                <!-- <div class="about__card-data-group">
+                                    <i class="bx bxl-html5"></i> html
+                                </div> -->
+                                <div class="about__card-data-group">
+                                    <i class="bx bxl-css3"></i> html | css
+                                </div>
+                                <div class="about__card-data-group">
+                                    <i class="bx bxl-javascript"></i> js
+                                </div>
+                                <div class="about__card-data-group">
+                                    <i class="bx bxl-react"></i> react
+                                </div>
+                                <div class="about__card-data-group">
+                                    <i class="bx bxs-file-css"></i> css in js
+                                </div>
+                                <div class="about__card-data-group">
+                                    <i class="bx bxl-redux"></i> redux
+                                </div>
+                                <div class="about__card-data-group">
+                                    <i class="bx bxl-bootstrap"></i> bootstrap
+                                </div>
+                                <div class="about__card-data-group">
+                                    <i class='bx bxl-nodejs'></i> nodeJs
+                                </div>
+                                <div class="about__card-data-group">
+                                    <i class="bx bxl-github"></i> github
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about__card-bottom-container">
+                            <h3 class="about__card-link">
+                                <a href="#projects">View Projects</a>
+                            </h3>
+
+                            <button class="button about__card-button">
+                                <a href="#projects">
+                                    <i class="bx bx-search"></i>
+                                </a>
+                            </button>
+                        </div>
+                    </article>
+                    <!-- Card 2 connect -->
+                    <article>
+                    <div class="about__card">
+                        <div class="shape shape__smaller"></div>
+
+                        <div class="about__card-top-container">
+                            <h1 class="about__card-title">Connect online</h1>
+                            <h3 class="about-card-subtitle">
+                                Go on then... don't be shy
+                            </h3>
+                        </div>
+
+                        <div class="about__card-img-container">
+                            <img
+                                src="./assets/img/photos/img-marizoo-dive.jpg"
+                                alt="marizoo"
+                                class="about__card-img"
+                            />
+                        </div>
+                        
+                        <div class="about__card-middle-container">
+                            <h4 class="about__card-data-title">Her Social Links</h4>
+                            <div class="about__card-data-social">
+                                <div class="about__card-data-group">
+                                    <a
+                                        href="https://github.com/marizoo"
+                                        target="_blank"
+                                        class="about__card-data-group-social"
+                                    >
+                                        <i class="bx bxl-github"></i> Github
+                                    </a>
+                                </div>
+                                <div class="about__card-data-group">
+                                    <a
+                                        href="https://pin.it/10JUIiM"
+                                        target="_blank"
+                                        class="about__card-data-group-social"
+                                    >
+                                        <i class="bx bxl-pinterest"></i>
+                                        Pinterest
+                                    </a>
+                                </div>
+                                <div class="about__card-data-group">
+                                    <a
+                                        href="https://www.youtube.com/channel/UCfkbnM9WvHD3mjecBiGHCBQ/playlists"
+                                        target="_blank"
+                                        class="about__card-data-group-social"
+                                    >
+                                        <i class="bx bxl-youtube"></i>
+                                        Youtube
+                                    </a>
+                                </div>
+                                <div class="about__card-data-group">
+                                    <a
+                                        href="https://twitter.com/_marizoo"
+                                        target="_blank"
+                                        class="about__card-data-group-social"
+                                    >
+                                        <i class="bx bxl-twitter"></i>
+                                        Twitter
+                                    </a>
+                                </div>
+                                <div class="about__card-data-group">
+                                    <a
+                                        href="https://dev.to/marizoo"
+                                        target="_blank"
+                                        class="about__card-data-group-social"
+                                    >
+                                        <i class="bx bxl-dev-to"></i> Dev.to
+                                    </a>
+                                </div>
+                                <div class="about__card-data-group">
+                                    <a
+                                        href="https://medium.com/@marizoo"
+                                        target="_blank"
+                                        class="about__card-data-group-social"
+                                    >
+                                        <i class="bx bxl-medium"></i> Medium
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="about__card-bottom-container">
+                            <h3 class="about__card-link">
+                                <a href="#contact">Get in touch</a>
+                            </h3>
+
+                            <button class="button about__card-button">
+                                <a href="#contact">
+                                    <i class="bx bx-envelope"></i
+                                ></a>
+                            </button>
+                        </div>
+                    </article>
+                    <!-- Card 3 employment -->
+                    <article class="about__card">
+                        <div class="shape shape__smaller"></div>
+                        <div class="about__card-top-container">
+                            <h1 class="about__card-title">Job Experiences</h1>
+                            <h3 class="about-card-subtitle">Pre-Coding era</h3>
+                        </div>
+
+                        <div class="about__card-img-container">
+                            <img
+                                src="./assets/img/photos/img-marizoo-yoga.jpeg"
+                                alt="marizoo"
+                                class="about__card-img"
+                            />
+                        </div>
+
+                        <div class="about__card-middle-container">
+                            <h4 class="about__card-data-title">
+                                Her Previous Employment
+                            </h4>
+
+                            <div class="about__card-data-employment">
+                                <div class="about__card-data-group">
+                                    Dive Instructor
+                                </div>
+                                <div class="about__card-data-group">
+                                    Activity Manager
+                                </div>
+                                <div class="about__card-data-group">
+                                    Cruise Director
+                                </div>
+                                <div class="about__card-data-group">
+                                    Yoga Teacher
+                                </div>
+                                <div class="about__card-data-group">
+                                    Dive Manager
+                                </div>
+                                <div class="about__card-data-group">
+                                    Junior Architect
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="about__card-bottom-container">
+                            <h3 class="about__card-link">
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    >Slide into her DM</a
+                                >
+                            </h3>
+
+                            <button class="button about__card-button">
+                                <a
+                                    
+                                    href="#"
+                                    target="_blank"
+                                >
+                                    <i class="bx bxl-instagram"></i
+                                ></a>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contact">
+                <h2 class="section__title">Send a message</h2>
+                <p class="section__subtitle">She'll be happy to hear from you</p>
+
+
+                <div class="contact__container container grid">
+                    <form id="contact-form" class="contact__form">
+                        <input type="hidden" name="contact_number" />
+                        <label for="name" class="contact__form-label"
+                            >Name</label
+                        >
+                        <input
+                            placeholder="your name..."
+                            required
+                            class="contact__form-input"
+                            type="text"
+                            name="user_name"
+                            id="name"
+                        />
+                        <label for="email" class="contact__form-label"
+                            >Email</label
+                        >
+                        <input
+                            placeholder="your email..."
+                            required
+                            class="contact__form-input"
+                            type="email"
+                            name="user_email"
+                            id="email"
+                        />
+                        <label for="subject" class="contact__form-label"
+                            >Subject</label
+                        >
+                        <input
+                            placeholder="subject..."
+                            class="contact__form-input"
+                            type="text"
+                            name="user_subject"
+                            id="subject"
+                        />
+                        <label
+                            required
+                            for="message"
+                            class="contact__form-label"
+                            >Message</label
+                        >
+                        <textarea
+                            placeholder="your message..."
+                            required
+                            class="contact__form-textarea"
+                            name="message"
+                            id="message"
+                        ></textarea>
+                        <input
+                            class="button contact__form-button"
+                            type="submit"
+                            value="Send"
+                        />
+                    </form>
+                </div>
+            </section>
+        </main>
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="shape shape__big"></div>
+            <div class="shape shape__small"></div>
+            <div class="footer__container">
+                <!-- Footer Content 1 Marizoo-->
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        <a href="#" class="footer__title-logo">Marizoo</a>
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li class="footer__link-noLink">
+                            Front End Web Developer
+                        </li>
+                        <li class="footer__link-noLink">
+                            Freelance Dive Instructor
+                        </li>
+                        <li class="footer__link-noLink">
+                            <i class="bx bx-map"></i> Bali, Indonesia.
+                        </li>
+                    </ul>
+                </div>
+                <!-- Footer Content 4 Let's connect-->
+                <div class="footer__content">
+                    <h3 class="footer__title">Let's connect</h3>
+
+                    <ul class="footer__social">
+                        <a
+                            href="https://github.com/marizoo"
+                            target="_blank"
+                            class="footer__social-link"
+                        >
+                            <i class="bx bxl-github"></i>
+                        </a>
+                        <a
+                            href="https://pin.it/10JUIiM"
+                            target="_blank"
+                            class="footer__social-link"
+                        >
+                            <i class="bx bxl-pinterest"></i>
+                        </a>
+                        <a
+                            href="https://www.youtube.com/channel/UCfkbnM9WvHD3mjecBiGHCBQ/playlists"
+                            target="_blank"
+                            class="footer__social-link"
+                        >
+                            <i class="bx bxl-youtube"></i>
+                        </a>
+                        <a
+                            href="https://twitter.com/_marizoo"
+                            target="_blank"
+                            class="footer__social-link"
+                        >
+                            <i class="bx bxl-twitter"></i>
+                        </a>
+                        <a
+                            href="https://dev.to/marizoo"
+                            target="_blank"
+                            class="footer__social-link"
+                        >
+                            <i class="bx bxl-dev-to"></i>
+                        </a>
+                        <a
+                            href="https://medium.com/@marizoo"
+                            target="_blank"
+                            class="footer__social-link"
+                        >
+                            <i class="bx bxl-medium"></i>
+                        </a>
+                    </ul>
+                </div>
+                <!-- Footer Content 2 Sitemap -->
+                <div class="footer__content">
+                    <h3 class="footer__title">Sitemap</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#home" class="footer__link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#overview" class="footer__link">Overview</a>
+                        </li>
+                        <li>
+                            <a href="#projects" class="footer__link"
+                                >Projects</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#about" class="footer__link">About</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer__link"
+                                >Contact Me</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <!-- Footer Content 3 Information-->
+                <div class="footer__content">
+                    <h3 class="footer__title">Information</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#contact" class="footer__link"
+                                >Request for my CV</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer__link"
+                                >Send me a message</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                target="_blank"
+                                class="footer__link"
+                                >Let's go hiking!</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer__link"
+                                >Dude, you play tennis?</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                target="_blank"
+                                class="footer__link"
+                                >Wanna learn diving?</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__copy">😎 Marizoo &copy; All Rights Reserved</div>
+            <div class="footer__copy1"> This site is vanilla flavored | click here for the <a href="#"><span class="footer__copy-link">github repo</span></a> </div>
+        </footer>
+
+        <!--========== SCROLL UP ==========-->
+        <a href="#home" class="scrollup" id="scroll-up">
+            <i class="bx bx-up-arrow-alt"></i>
+        </a>
+
+        <!--=============== EMAIL JS ===============-->
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+        ></script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("USER_ID");
+            })();
+        </script>
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="./assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="./assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MIXITUP JS ===============-->
+        <script src="./assets/js/mixitup.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>
