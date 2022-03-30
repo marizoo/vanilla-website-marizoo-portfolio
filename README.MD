@@ -29,4 +29,4 @@
 
 
 ## IMAGE:
-![Screenshot of the App](./screenshots/cs.marizoo-final-light-400.jpg)
+![Screenshot of the App](./screenshots/cs-marizoo-portfolio-400-final.jpg)
