@@ -96,7 +96,7 @@ let swiper = new Swiper(".mySwiper", {
 /*=============== MIXITUP FILTER FEATURED ===============*/
 var mixerFeatured = mixitup(".projects__content", {
     selectors: {
-        target: ".projects__card, .projects__card-long",
+        target: ".projects__cardV1",
     },
     animation: {
         duration: 300,
@@ -145,56 +145,166 @@ function scrollActive() {
 }
 window.addEventListener("scroll", scrollActive);
 
-/*=============== SCROLL REVEAL ANIMATION ===============*/
-// I turned this off.
-// const sr = ScrollReveal({
-//     origin: "top",
-//     distance: "60px",
-//     duration: 2500,
-//     delay: 400,
-//     // reset: true,
-// });
-// sr.reveal(`.home__data`);
-// sr.reveal(`.section__title`, { delay: 200 });
-// sr.reveal(`.section__subtitle`, { delay: 300 });
-// sr.reveal(`.projects__filters`, { delay: 400 });
-// sr.reveal(
-//     `.products__container, .projects__content, .about__cardContainer, .contact__container, .footer__content `,
-//     {
-//         delay: 500,
-//         interval: 100,
-//         origin: "bottom",
-//     }
-// );
-// sr.reveal(``, { delay: 1000, origin: "bottom" });
-// sr.reveal(`.about__story-Container`, { origin: "left" });
-// sr.reveal(``, { origin: "right" });
-// sr.reveal(``, { delay: 600, origin: "bottom" });
-// sr.reveal(``, { interval: 300 });
-// sr.reveal(``, { interval: 100 });
+/*=============== web3form ===============*/
+const form = document.getElementById("contact-form");
+const result = document.getElementById("result");
 
-/*=============== EMAIL JS ===============*/
-// listen to the form submission
-document
-    .getElementById("contact-form")
-    .addEventListener("submit", function (event) {
-        event.preventDefault();
-
-        const serviceID = "SERVICE_ID";
-        const templateID = "TEMPLATE_ID";
-
-        // send the email here
-        emailjs.sendForm(serviceID, templateID, this).then(
-            (response) => {
-                console.log("SUCCESS!", response.status, response.text);
-                alert(
-                    "YAY! Thank You for your message, I'll get back to you asap!"
-                );
-                document.getElementById("contact-form").reset();
-            },
-            (error) => {
-                console.log("FAILED...", error);
-                alert("Oops.. something went wrong, please try again", error);
-            }
-        );
+form.addEventListener("submit", function (e) {
+    const formData = new FormData(form);
+    e.preventDefault();
+    var object = {};
+    formData.forEach((value, key) => {
+        object[key] = value;
     });
+    var json = JSON.stringify(object);
+    result.innerHTML = "Please wait my darling...";
+
+    fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+        },
+        body: json,
+    })
+        .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+                result.innerHTML = " 🥰 Yayyy! Thanks for your message.";
+            } else {
+                console.log(response);
+                result.innerHTML = json.message;
+            }
+        })
+        .catch((error) => {
+            console.log(error);
+            result.innerHTML = "☹️ Oopsies... Please try again.";
+        })
+        .then(function () {
+            form.reset();
+            setTimeout(() => {
+                result.style.display = "none";
+            }, 5000);
+        });
+});
+
+/*=============== VIDEO TOGGLE ===============*/
+function toggleVideo() {
+    const trailer = document.querySelector(".play-video-container");
+    const video = document.querySelector(".play-video");
+    trailer.classList.toggle("active");
+    video.currentTime = 0;
+    video.pause();
+}
+// 102
+function toggleVideo102() {
+    const trailer = document.querySelector(".play-video-container102");
+    const video = document.querySelector(".play-video102");
+    trailer.classList.toggle("active");
+    video.currentTime = 0;
+    video.pause();
+}
+// 103
+function toggleVideo103() {
+    const trailer = document.querySelector(".play-video-container103");
+    const video = document.querySelector(".play-video103");
+    trailer.classList.toggle("active");
+    video.currentTime = 0;
+    video.pause();
+}
+// 201
+function toggleVideo201() {
+    const trailer = document.querySelector(".play-video-container201");
+    const video = document.querySelector(".play-video201");
+    trailer.classList.toggle("active");
+    video.currentTime = 0;
+    video.pause();
+}
+// 202
+function toggleVideo202() {
+    const trailer = document.querySelector(".play-video-container202");
+    const video = document.querySelector(".play-video202");
+    trailer.classList.toggle("active");
+    video.currentTime = 0;
+    video.pause();
+}
+// 203
+function toggleVideo203() {
+    const trailer = document.querySelector(".play-video-container203");
+    const video = document.querySelector(".play-video203");
+    trailer.classList.toggle("active");
+    video.currentTime = 0;
+    video.pause();
+}
+// 301
+function toggleVideo301() {
+    const trailer = document.querySelector(".play-video-container301");
+    const video = document.querySelector(".play-video301");
+    trailer.classList.toggle("active");
+    video.currentTime = 0;
+    video.pause();
+}
+// 302
+function toggleVideo302() {
+    const trailer = document.querySelector(".play-video-container302");
+    const video = document.querySelector(".play-video302");
+    trailer.classList.toggle("active");
+    video.currentTime = 0;
+    video.pause();
+}
+// 303
+function toggleVideo303() {
+    const trailer = document.querySelector(".play-video-container303");
+    const video = document.querySelector(".play-video303");
+    trailer.classList.toggle("active");
+    video.currentTime = 0;
+    video.pause();
+}
+// 401
+function toggleVideo401() {
+    const trailer = document.querySelector(".play-video-container401");
+    const video = document.querySelector(".play-video401");
+    trailer.classList.toggle("active");
+    video.currentTime = 0;
+    video.pause();
+}
+// 402
+function toggleVideo402() {
+    const trailer = document.querySelector(".play-video-container402");
+    const video = document.querySelector(".play-video402");
+    trailer.classList.toggle("active");
+    video.currentTime = 0;
+    video.pause();
+}
+// 403
+function toggleVideo403() {
+    const trailer = document.querySelector(".play-video-container403");
+    const video = document.querySelector(".play-video403");
+    trailer.classList.toggle("active");
+    video.currentTime = 0;
+    video.pause();
+}
+// 501
+function toggleVideo501() {
+    const trailer = document.querySelector(".play-video-container501");
+    const video = document.querySelector(".play-video501");
+    trailer.classList.toggle("active");
+    video.currentTime = 0;
+    video.pause();
+}
+// 502
+function toggleVideo502() {
+    const trailer = document.querySelector(".play-video-container502");
+    const video = document.querySelector(".play-video502");
+    trailer.classList.toggle("active");
+    video.currentTime = 0;
+    video.pause();
+}
+// 503
+function toggleVideo503() {
+    const trailer = document.querySelector(".play-video-container503");
+    const video = document.querySelector(".play-video503");
+    trailer.classList.toggle("active");
+    video.currentTime = 0;
+    video.pause();
+}

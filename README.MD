@@ -1,8 +1,6 @@
-
-
 ## DESCRIPTION:
 - Vanilla Website for Marizoo's Web Dev portfolio
-- [Youtube Video of the App](https://youtu.be/06EkG4IqroE)
+- [Youtube Video of the App](https://youtu.be/MGt6v0GLGFc)
 - FYI: For privacy reason, the original repo is set to private.
     - This is a copy of the original repo.
     - Images & Private data have been erased from this repo.
@@ -12,11 +10,16 @@
 - Libraries:
     - swiperjs
     - mixitupjs
-    - emailJS.
+    - Web3Forms
+
+## WHY VANILLA?
+- I am working with slow internet connection (less than 1mbps).
+- Also, I wanted my portfolio to be "low-maintenance" so I can focus working on projects & my learning.
 
 ## PROGRESS:
 - Done: 100%.
 - Responsive: 100%.
+- light/dark theme: yes.
 
 ## View other projects:
 - [My Blog1](https://dev.to/marizoo)
@@ -26,4 +29,4 @@
 
 
 ## IMAGE:
-![Screenshot of the App](./screenshots/css-20-marizoo-port-400-dark.jpg)
+![Screenshot of the App](./screenshots/cs.marizoo-final-light-400.jpg)

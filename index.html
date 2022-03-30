@@ -27,7 +27,7 @@
         <header class="header" id="header">
             <nav class="nav container">
                 <a href="#" class="nav__logo">
-                    Marizoo
+                    M<span class="nav__logo-1">Z</span> 
                 </a>
 
                 <div class="nav__menu" id="nav-menu">
@@ -35,6 +35,7 @@
                         <li class="nav__menu-list-item">
                             <a href="#home" class="nav__link">Home</a>
                         </li>
+
                         <li class="nav__menu-list-item">
                             <a href="#overview" class="nav__link">Overview</a>
                         </li>
@@ -76,25 +77,24 @@
                 <div class="shape shape__small"></div>
                 <div class="home__container container">
                     <div class="home__data">
-                        <div class="home__data-top-container">
+                        <div class="home__data-img-container">
+                            <img src="./assets/img/photos/img-moyo-350flip.jpg" alt="izoo" class="home__img">  
+                        </div>
+
+                        <div class="home__data-text-container">
                             <h2 class="home__title">This is Marizoo, a Front-End Web Developer based in Bali.</h2>
                             <h3 class="home__subtitle">She builds responsive user interfaces for websites and apps.</h3>
-                        </div>  
-                        <div class="home__data-bottom-container">
-                            <img src="./assets/img/photos/img-mariza-motor.jpg" alt="izoo" class="home__img">
                             <div class="home__button-container">
                                 <a href="#contact">
                                 <button class="button home__button home__button-contact">
-                                    Contact Me
-                                    
+                                    Contact Me        
                                 </button></a>
                                 <a href="#projects">
                                 <button class="button home__button home__button-projects">
                                     Explore Projects               
                                 </button></a> 
                             </div>
-                        </div>
-                       
+                        </div>    
                     </div>
                 </div>
             </section>
@@ -105,7 +105,7 @@
                 <div class="shape shape__small"></div>
 
                 <h2 class="section__title">Overview</h2>
-                <p class="section__subtitle">Here are some of her projects</p>
+                <p class="section__subtitle">Slide to view some of her projects</p>
 
                 <div class="overview__container container">
                         <div class="imgBox">
@@ -152,7 +152,7 @@
                 <div class="shape shape__small"></div>
 
                 <h2 class="section__title">Projects</h2>
-                <p class="section__subtitle">Check out her projects in details</p>
+                <p class="section__subtitle">Filter her projects by category</p>
 
                 <div class="projects__container container">
                     <ul class="projects__filters">
@@ -207,482 +207,676 @@
                     </ul>
 
                     <div class="projects__content grid">
-   
-                        <!-- Project Article 1-01.Bweery Vanilla-->
-                        <article class="projects__card mix vanilla">
+                         <!-- project card v1 1-01.Bweery Vanilla-->
+                          <article class="projects__cardV1 mix vanilla">
                             <div class="shape shape__smaller"></div>
-
-                            <h3 class="projects__subtitle">Vanilla UI</h3>
-                            <h1 class="projects__title">Bweery</h1>
-                            <div class="projects__img-container-box">
-                                <div class="projects__img-container">
-                                    <img
-                                        src="./assets/img/websites/08-Vanilla-css-12-laptop-180.jpg"
-                                        alt="vanilla"
-                                        class="projects__img"
-                                    />
+                            <!-- info -->
+                            <div class="projects__cardV1-info">
+                                <p class="projects__cardV1-info-category">Vanilla UI</p>
+                                <div class="projects__cardV1-info-techStack">
+                                    <span class="projects__cardV1-info-techStack-span">html</span>
+                                    <span class="projects__cardV1-info-techStack-span">css</span>
+                                    <span class="projects__cardV1-info-techStack-span">js</span>
                                 </div>
                             </div>
-                            <h3 class="projects__info-stack">
-                                html | css | js
-                            </h3>
-                            <h3 class="projects__info-desc">
-                                Business Website <br />
-                                Beer company
-                            </h3>
-                            <div class="projects__button-container">
-                                <button
-                                    class="projects__button projects__button1"
-                                >
-                                    <a href="#"
-                                        >View more
-                                        <i class="bx bx-chevrons-right"></i
-                                    ></a>
-                                </button>
-                                <button class="projects__button">
-                                    <a href="https://github.com/marizoo/vanilla-website-beer" target="_blank"
-                                        ><i class="bx bxl-github"></i
-                                    ></a>
-                                </button>
-                                <button class="projects__button">
-                                    <a href="https://youtu.be/ShJT8ZuY8EU" target="blank"
-                                        ><i class="bx bxl-youtube"></i
-                                    ></a>
-                                </button>
+                            <!-- image -->
+                            <div class="projects__cardV1-image-container">
+                                <div class="projects__cardV1-image-content">
+                                    <img class="projects__cardV1-image-img" src="./assets/img/websites/08-Vanilla-css-12-laptop-180.jpg" alt="">
+                                </div>
                             </div>
-                        </article>
-                        <!-- Project Article 1-02.Cafe Vanilla-->
-                        <article class="projects__card mix vanilla">
-                            <div class="shape shape__smaller"></div>
+                            <!-- description -->
+                            <div class="projects__cardV1-desc-container">
+                                <p class="projects__cardV1-desc-title">Bweery</p>
+                                <ul class="projects__cardV1-desc-list">
+                                    <li class="projects__cardV1-desc-list-item">Business Website</li>
+                                    <li class="projects__cardV1-desc-list-item">Beer Company</li>
+                                    <li class="projects__cardV1-desc-list-item">Responsive | light+dark theme</li>
+                                </ul>
+                            </div>
+                            <!-- buttons -->
+                            <div class="projects__cardV1-button-container">
+                                <div class="projects__cardV1-button-content">
+                                   
+                                    <div class="projects__cardV1-button-content-bottom">
+                                        <button onClick="toggleVideo()" class="projects__cardV1-button-video" id="projects__cardV1-button-video">
+                                            <p class="projects__cardV1-button-text">Video</p>
+                                            <i class='bx bx-play-circle'></i>
+                                        </button>
+                                    <a href="https://github.com/marizoo/vanilla-website-beer" target="_blank" class="projects__cardV1-button-github">
+                                        <p class="projects__cardV1-button-text">Github</p>
+                                        <i class="bx bxl-github"></i>
+                                    </a>
+                                    <a href="https://youtu.be/ShJT8ZuY8EU" target="_blank" class="projects__cardV1-button-youtube">
+                                        <p class="projects__cardV1-button-text">Youtube</p>
+                                        <i class="bx bxl-youtube"></i>
+                                    </a>
+                                </div>
+                                </div>
+                            </div>
+                        </article> 
+                        <!-- project card v1 end -->
+                        <!-- POP UP VIDEO 101 -->
+                        <div class="play-video-container">
+                            <iframe width="710" height="423" class="play-video" src="https://youtube.com/embed/ShJT8ZuY8EU" controls="true" autoplay="true"></iframe>
+                            <img src="./assets/img/icons/close.png" alt="close" class="play-video-closeIcon" onClick="toggleVideo()">
+                        </div> 
+                        <!-- POP UP VIDEO END-->
+                        <!-- END project card v1 1-01.Bweery Vanilla-->
 
-                            <h3 class="projects__subtitle">Vanilla UI</h3>
-                            <h1 class="projects__title">Coffee Cafe</h1>
-                            <div class="projects__img-container-box">
-                            <div class="projects__img-container">
-                                <img
+                         <!-- project card v1 1-02.Cafe Vanilla-->
+                          <article class="projects__cardV1 mix vanilla">
+                            <div class="shape shape__smaller"></div>
+                            <!-- info -->
+                            <div class="projects__cardV1-info">
+                                <p class="projects__cardV1-info-category">Vanilla UI</p>
+                                <div class="projects__cardV1-info-techStack">
+                                    <span class="projects__cardV1-info-techStack-span">html</span>
+                                    <span class="projects__cardV1-info-techStack-span">css</span>
+                                    <span class="projects__cardV1-info-techStack-span">js</span>
+                                </div>
+                            </div>
+                            <!-- image -->
+                            <div class="projects__cardV1-image-container">
+                                <div class="projects__cardV1-image-content">
+                                    <img
                                     src="./assets/img/websites/09-vanilla-css-13-coffee-180.jpg"
                                     alt="vanilla"
-                                    class="projects__img"
+                                    class="projects__cardV1-image-img" 
                                 />
+                                </div>
                             </div>
-                        </div>
-                            <h3 class="projects__info-stack">
-                                html | css | js
-                            </h3>
-                            <h3 class="projects__info-desc">
-                                Business website <br />
-                                Coffee shop
-                            </h3>
-                            <div class="projects__button-container">
-                                <button
-                                    class="projects__button projects__button1"
-                                >
-                                    <a href="#"
-                                        >View more
-                                        <i class="bx bx-chevrons-right"></i
-                                    ></a>
-                                </button>
-                                <button class="projects__button">
-                                    <a href="https://github.com/marizoo/vanilla-website-cafe" target="_blank"
-                                        ><i class="bx bxl-github"></i
-                                    ></a>
-                                </button>
-                                <button class="projects__button">
-                                    <a href="https://youtu.be/-TijNlW-7g8" target="blank"
-                                        ><i class="bx bxl-youtube"></i
-                                    ></a>
-                                </button>
+                            <!-- description -->
+                            <div class="projects__cardV1-desc-container">
+                                <p class="projects__cardV1-desc-title">Coffee Cafe</p>
+                                <ul class="projects__cardV1-desc-list">
+                                    <li class="projects__cardV1-desc-list-item">Business Website</li>
+                                    <li class="projects__cardV1-desc-list-item">Coffee shop</li>
+                                    <li class="projects__cardV1-desc-list-item">Responsive</li>
+                                </ul>
                             </div>
-                        </article>               
-                        <!-- Project Article 1-03.Traveleeka Vanilla-->
-                        <article class="projects__card mix vanilla">
-                            <div class="shape shape__smaller"></div>
+                            <!-- buttons -->
+                            <div class="projects__cardV1-button-container">
+                                <div class="projects__cardV1-button-content">
+                                   
+                                    <div class="projects__cardV1-button-content-bottom">
+                                        <button onClick="toggleVideo102()" class="projects__cardV1-button-video" id="projects__cardV1-button-video">
+                                            <p class="projects__cardV1-button-text">Video</p>
+                                            <i class='bx bx-play-circle'></i>
+                                        </button>
+                                    <a href="https://github.com/marizoo/vanilla-website-cafe"  target="_blank" class="projects__cardV1-button-github">
+                                        <p class="projects__cardV1-button-text">Github</p>
+                                        <i class="bx bxl-github"></i>
+                                    </a>
+                                    <a href="https://youtu.be/-TijNlW-7g8" target="_blank" class="projects__cardV1-button-youtube">
+                                        <p class="projects__cardV1-button-text">Youtube</p>
+                                        <i class="bx bxl-youtube"></i>
+                                    </a>
+                                </div>
+                                </div>
+                            </div>
+                        </article> 
+                        <!-- project card v1 102 end -->
+                        <!-- POP UP VIDEO 102 -->
+                        <div class="play-video-container102">
+                            <iframe width="710" height="423" class="play-video102" src="https://youtube.com/embed/-TijNlW-7g8" controls="true" autoplay="true"></iframe>
+                            <img src="./assets/img/icons/close.png" alt="close" class="play-video-closeIcon" onClick="toggleVideo102()">
+                        </div> 
+                        <!-- POP UP VIDEO END-->
+                        <!-- END project card v1 1-02.Cafe Vanilla-->
 
-                            <h3 class="projects__subtitle">Vanilla UI</h3>
-                            <h1 class="projects__title">Traveleeka</h1>
-                        <div class="projects__img-container-box">
-                            <div class="projects__img-container">
-                                <img
+                         <!-- project card v1 1-03.Traveleeka Vanilla-->
+                          <article class="projects__cardV1 mix vanilla">
+                            <div class="shape shape__smaller"></div>
+                            <!-- info -->
+                            <div class="projects__cardV1-info">
+                                <p class="projects__cardV1-info-category">Vanilla UI</p>
+                                <div class="projects__cardV1-info-techStack">
+                                    <span class="projects__cardV1-info-techStack-span">html</span>
+                                    <span class="projects__cardV1-info-techStack-span">css</span>
+                                    <span class="projects__cardV1-info-techStack-span">js</span>
+                                </div>
+                            </div>
+                            <!-- image -->
+                            <div class="projects__cardV1-image-container">
+                                <div class="projects__cardV1-image-content">
+                                    <img
                                     src="./assets/img/websites/11-vanilla-css-15-792-180.jpg"
                                     alt="vanilla"
-                                    class="projects__img"
+                                    class="projects__cardV1-image-img" 
                                 />
+                                </div>
                             </div>
-                        </div>
-                            <h3 class="projects__info-stack">
-                                html | css | js
-                            </h3>
-                            <h3 class="projects__info-desc">
-                                E-commerce website <br />
-                                Online Travel Agency
-                            </h3>
-                            <div class="projects__button-container">
-                                <button
-                                    class="projects__button projects__button1"
-                                >
-                                    <a href="#"
-                                        >View more
-                                        <i class="bx bx-chevrons-right"></i
-                                    ></a>
-                                </button>
-                                <button class="projects__button">
-                                    <a href="https://github.com/marizoo/vanilla-website-traveleeka" target="_blank"
-                                        ><i class="bx bxl-github"></i
-                                    ></a>
-                                </button>
-                                <button class="projects__button">
-                                    <a href="https://www.youtube.com/watch?v=epqvEcEi7es" target="blank"
-                                        ><i class="bx bxl-youtube"></i
-                                    ></a>
-                                </button>
+                            <!-- description -->
+                            <div class="projects__cardV1-desc-container">
+                                <p class="projects__cardV1-desc-title">Traveleeka</p>
+                                <ul class="projects__cardV1-desc-list">
+                                    <li class="projects__cardV1-desc-list-item">E-commerce website</li>
+                                    <li class="projects__cardV1-desc-list-item">Online Travel Agency</li>
+                                    <li class="projects__cardV1-desc-list-item">Responsive | light+dark theme</li>
+                                </ul>
                             </div>
-                        </article>                 
-                        <!-- Project Article 2-01-COODER ReactUi-->
-                        <article class="projects__card mix reactUi">
-                            <div class="shape shape__smaller"></div>
+                            <!-- buttons -->
+                            <div class="projects__cardV1-button-container">
+                                <div class="projects__cardV1-button-content">
+                                   
+                                    <div class="projects__cardV1-button-content-bottom">
+                                        <button onClick="toggleVideo103()" class="projects__cardV1-button-video" id="projects__cardV1-button-video">
+                                            <p class="projects__cardV1-button-text">Video</p>
+                                            <i class='bx bx-play-circle'></i>
+                                        </button>
+                                    <a href="https://github.com/marizoo/vanilla-website-traveleeka"  target="_blank" class="projects__cardV1-button-github">
+                                        <p class="projects__cardV1-button-text">Github</p>
+                                        <i class="bx bxl-github"></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/watch?v=epqvEcEi7es" target="_blank" class="projects__cardV1-button-youtube">
+                                        <p class="projects__cardV1-button-text">Youtube</p>
+                                        <i class="bx bxl-youtube"></i>
+                                    </a>
+                                </div>
+                                </div>
+                            </div>
+                        </article> 
+                        <!-- project card v1 103 end -->
+                        <!-- POP UP VIDEO 103 -->
+                        <div class="play-video-container103">
+                            <iframe width="710" height="423" class="play-video103" src="https://youtube.com/embed/epqvEcEi7es" controls="true" autoplay="true"></iframe>
+                            <img src="./assets/img/icons/close.png" alt="close" class="play-video-closeIcon" onClick="toggleVideo103()">
+                        </div> 
+                        <!-- POP UP VIDEO END-->
+                        <!-- END project card v1 1-03.Traveleeka Vanilla-->
 
-                            <h3 class="projects__subtitle">React UI</h3>
-                            <h1 class="projects__title">Cooder</h1>
-                            <div class="projects__img-container-box">
-                            <div class="projects__img-container">
-                                <img
+
+                         <!-- project card v1 2-01-COODER ReactUi-->
+                          <article class="projects__cardV1 mix reactUi">
+                            <div class="shape shape__smaller"></div>
+                            <!-- info -->
+                            <div class="projects__cardV1-info">
+                                <p class="projects__cardV1-info-category">React UI</p>
+                                <div class="projects__cardV1-info-techStack">
+                                    <span class="projects__cardV1-info-techStack-span">react</span>
+                                    <span class="projects__cardV1-info-techStack-span">css-bem</span>
+                                </div>
+                            </div>
+                            <!-- image -->
+                            <div class="projects__cardV1-image-container">
+                                <div class="projects__cardV1-image-content">
+                                    <img
                                     src="./assets/img/websites/05-reactUi-55.responsive-react-website-180.jpg"
                                     alt="react ui"
-                                    class="projects__img"
+                                    class="projects__cardV1-image-img" 
                                 />
+                                </div>
                             </div>
-                        </div>
-                            <h3 class="projects__info-stack">
-                                react | css-bem
-                            </h3>
-                            <h3 class="projects__info-desc">
-                                Business website <br />
-                                Coding School
-                            </h3>
-                            <div class="projects__button-container">
-                                <button
-                                    class="projects__button projects__button1"
-                                >
-                                    <a href="#"
-                                        >View more
-                                        <i class="bx bx-chevrons-right"></i
-                                    ></a>
-                                </button>
-                                <button class="projects__button">
-                                    <a href="https://github.com/marizoo/responsive-react-website" target="_blank"
-                                        ><i class="bx bxl-github"></i
-                                    ></a>
-                                </button>
-                                <button class="projects__button">
-                                    <a href="https://www.youtube.com/watch?v=2Ao0ZuziuQg"  target="_blank"
-                                        ><i class="bx bxl-youtube"></i
-                                    ></a>
-                                </button>
+                            <!-- description -->
+                            <div class="projects__cardV1-desc-container">
+                                <p class="projects__cardV1-desc-title">Cooder</p>
+                                <ul class="projects__cardV1-desc-list">
+                                    <li class="projects__cardV1-desc-list-item">Business website</li>
+                                    <li class="projects__cardV1-desc-list-item">Coding School</li>
+                                    <li class="projects__cardV1-desc-list-item">Responsive</li>
+                                </ul>
                             </div>
-                        </article>
-                        <!-- Project Article 2-02-LAMPA ReactUi-->
-                        <article class="projects__card mix reactUi">
-                            <div class="shape shape__smaller"></div>
+                            <!-- buttons -->
+                            <div class="projects__cardV1-button-container">
+                                <div class="projects__cardV1-button-content">
+                                   
+                                    <div class="projects__cardV1-button-content-bottom">
+                                        <button onClick="toggleVideo201()" class="projects__cardV1-button-video" id="projects__cardV1-button-video">
+                                            <p class="projects__cardV1-button-text">Video</p>
+                                            <i class='bx bx-play-circle'></i>
+                                        </button>
+                                    <a href="https://github.com/marizoo/responsive-react-website"  target="_blank" class="projects__cardV1-button-github">
+                                        <p class="projects__cardV1-button-text">Github</p>
+                                        <i class="bx bxl-github"></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/watch?v=2Ao0ZuziuQg"  target="_blank" class="projects__cardV1-button-youtube">
+                                        <p class="projects__cardV1-button-text">Youtube</p>
+                                        <i class="bx bxl-youtube"></i>
+                                    </a>
+                                </div>
+                                </div>
+                            </div>
+                        </article> 
+                        <!-- project card v1 201 end -->
+                        <!-- POP UP VIDEO 201 -->
+                        <div class="play-video-container201">
+                            <iframe width="710" height="423" class="play-video201" src="https://youtube.com/embed/2Ao0ZuziuQg" controls="true" autoplay="true"></iframe>
+                            <img src="./assets/img/icons/close.png" alt="close" class="play-video-closeIcon" onClick="toggleVideo201()">
+                        </div> 
+                        <!-- POP UP VIDEO END-->
+                        <!-- END project card v1 2-01-COODER ReactUi-->
 
-                            <h3 class="projects__subtitle">React UI</h3>
-                            <h1 class="projects__title">Lamp Shop</h1>
-                            <div class="projects__img-container-box">
-                            <div class="projects__img-container">
-                                <img
+                         <!-- project card v1 2-02-LAMPA ReactUi-->
+                          <article class="projects__cardV1 mix reactUi">
+                            <div class="shape shape__smaller"></div>
+                            <!-- info -->
+                            <div class="projects__cardV1-info">
+                                <p class="projects__cardV1-info-category">React UI</p>
+                                <div class="projects__cardV1-info-techStack">
+                                    <span class="projects__cardV1-info-techStack-span">react</span>
+                                    <span class="projects__cardV1-info-techStack-span">styled-comp</span>
+                                </div>
+                            </div>
+                            <!-- image -->
+                            <div class="projects__cardV1-image-container">
+                                <div class="projects__cardV1-image-content">
+                                    <img
                                     src="./assets/img/websites/06-reactUi-59-lampa-180.jpg"
                                     alt="react ui"
-                                    class="projects__img"
+                                    class="projects__cardV1-image-img" 
                                 />
+                                </div>
                             </div>
-                        </div>
-                            <h3 class="projects__info-stack">
-                                react | styled-comp
-                            </h3>
-                            <h3 class="projects__info-desc">
-                                Business website <br />
-                                Lamp boutique shop
-                            </h3>
-                            <div class="projects__button-container">
-                                <button
-                                    class="projects__button projects__button1"
-                                >
-                                    <a href="#"
-                                        >View more
-                                        <i class="bx bx-chevrons-right"></i
-                                    ></a>
-                                </button>
-                                <button class="projects__button">
-                                    <a href="https://github.com/marizoo/react-website-lampa" target="_blank"
-                                        ><i class="bx bxl-github"></i
-                                    ></a>
-                                </button>
-                                <button class="projects__button">
-                                    <a href="https://youtu.be/jYM-pCVFeM8"  target="_blank"
-                                        ><i class="bx bxl-youtube"></i
-                                    ></a>
-                                </button>
+                            <!-- description -->
+                            <div class="projects__cardV1-desc-container">
+                                <p class="projects__cardV1-desc-title">Lampa</p>
+                                <ul class="projects__cardV1-desc-list">
+                                    <li class="projects__cardV1-desc-list-item">Business website</li>
+                                    <li class="projects__cardV1-desc-list-item">Lamp Shop</li>
+                                    <li class="projects__cardV1-desc-list-item">Responsive | light+dark theme</li>
+                                </ul>
                             </div>
-                        </article>
-                        <!-- Project Article 2-03-Z-shop ReactUi-->
-                        <article class="projects__card mix reactUi">
-                            <div class="shape shape__smaller"></div>
+                            <!-- buttons -->
+                            <div class="projects__cardV1-button-container">
+                                <div class="projects__cardV1-button-content">
+                                   
+                                    <div class="projects__cardV1-button-content-bottom">
+                                        <button onClick="toggleVideo202()" class="projects__cardV1-button-video" id="projects__cardV1-button-video">
+                                            <p class="projects__cardV1-button-text">Video</p>
+                                            <i class='bx bx-play-circle'></i>
+                                        </button>
+                                    <a href="https://github.com/marizoo/react-website-lampa"  target="_blank" class="projects__cardV1-button-github">
+                                        <p class="projects__cardV1-button-text">Github</p>
+                                        <i class="bx bxl-github"></i>
+                                    </a>
+                                    <a href="https://youtu.be/jYM-pCVFeM8" target="_blank" class="projects__cardV1-button-youtube">
+                                        <p class="projects__cardV1-button-text">Youtube</p>
+                                        <i class="bx bxl-youtube"></i>
+                                    </a>
+                                </div>
+                                </div>
+                            </div>
+                        </article> 
+                        <!-- project card v1 202 end -->
+                        <!-- POP UP VIDEO 202 -->
+                        <div class="play-video-container202">
+                            <iframe width="710" height="423" class="play-video202" src="https://youtube.com/embed/jYM-pCVFeM8" controls="true" autoplay="true"></iframe>
+                            <img src="./assets/img/icons/close.png" alt="close" class="play-video-closeIcon" onClick="toggleVideo202()">
+                        </div> 
+                        <!-- POP UP VIDEO END-->
+                        <!-- END project card v1 2-02-LAMPA ReactUi-->
 
-                            <h3 class="projects__subtitle">React UI</h3>
-                            <h1 class="projects__title">Z-shop</h1>
-                            <div class="projects__img-container-box">
-                            <div class="projects__img-container">
-                                <img
+
+                         <!-- project card v1 2-03-Z-shop ReactUi-->
+                          <article class="projects__cardV1 mix reactUi">
+                            <div class="shape shape__smaller"></div>
+                            <!-- info -->
+                            <div class="projects__cardV1-info">
+                                <p class="projects__cardV1-info-category">React UI</p>
+                                <div class="projects__cardV1-info-techStack">
+                                    <span class="projects__cardV1-info-techStack-span">react</span>
+                                    <span class="projects__cardV1-info-techStack-span">styled-comp</span>
+                                </div>
+                            </div>
+                            <!-- image -->
+                            <div class="projects__cardV1-image-container">
+                                <div class="projects__cardV1-image-content">
+                                    <img
                                     src="./assets/img/websites/07-reactUi-60-reactUI-zshop-180.jpg"
                                     alt="react ui"
-                                    class="projects__img"
+                                    class="projects__cardV1-image-img" 
                                 />
+                                </div>
                             </div>
-                        </div>
-                            <h3 class="projects__info-stack">
-                                react | styled-comp
-                            </h3>
-                            <h3 class="projects__info-desc">
-                               E-commerce website <br />
-                               Small Business
-                            </h3>
-                            <div class="projects__button-container">
-                                <button
-                                    class="projects__button projects__button1"
-                                >
-                                    <a href="#"
-                                        >View more
-                                        <i class="bx bx-chevrons-right"></i
-                                    ></a>
-                                </button>
-                                <button class="projects__button">
-                                    <a href="https://github.com/marizoo/react-website-z-shop" target="_blank"
-                                        ><i class="bx bxl-github"></i
-                                    ></a>
-                                </button>
-                                <button class="projects__button">
-                                    <a href="https://youtu.be/HvuW9dxYcVg"  target="_blank"
-                                        ><i class="bx bxl-youtube"></i
-                                    ></a>
-                                </button>
+                            <!-- description -->
+                            <div class="projects__cardV1-desc-container">
+                                <p class="projects__cardV1-desc-title">Z-shop</p>
+                                <ul class="projects__cardV1-desc-list">
+                                    <li class="projects__cardV1-desc-list-item">E-commerce website</li>
+                                    <li class="projects__cardV1-desc-list-item">Small Business</li>
+                                    <li class="projects__cardV1-desc-list-item">Responsive | light+dark theme</li>
+                                </ul>
                             </div>
-                        </article>
-                        <!-- Project Article 3-01-Scuba-Quiz React App-->
-                        <article class="projects__card-long mix reactApp">
-                            <div class="shape shape__smaller"></div>
+                            <!-- buttons -->
+                            <div class="projects__cardV1-button-container">
+                                <div class="projects__cardV1-button-content">
+                                   
+                                    <div class="projects__cardV1-button-content-bottom">
+                                        <button onClick="toggleVideo203()" class="projects__cardV1-button-video" id="projects__cardV1-button-video">
+                                            <p class="projects__cardV1-button-text">Video</p>
+                                            <i class='bx bx-play-circle'></i>
+                                        </button>
+                                    <a href="https://github.com/marizoo/react-website-z-shop"  target="_blank" class="projects__cardV1-button-github">
+                                        <p class="projects__cardV1-button-text">Github</p>
+                                        <i class="bx bxl-github"></i>
+                                    </a>
+                                    <a href="https://youtu.be/HvuW9dxYcVg" target="_blank" class="projects__cardV1-button-youtube">
+                                        <p class="projects__cardV1-button-text">Youtube</p>
+                                        <i class="bx bxl-youtube"></i>
+                                    </a>
+                                </div>
+                                </div>
+                            </div>
+                        </article> 
+                        <!-- project card v1 203 end -->
+                        <!-- POP UP VIDEO 203 -->
+                        <div class="play-video-container203">
+                            <iframe width="710" height="423" class="play-video203" src="https://youtube.com/embed/HvuW9dxYcVg" controls="true" autoplay="true"></iframe>
+                            <img src="./assets/img/icons/close.png" alt="close" class="play-video-closeIcon" onClick="toggleVideo203()">
+                        </div> 
+                        <!-- POP UP VIDEO END-->
+                        <!-- END project card v1 2-03-Z-shop ReactUi-->
 
-                            <h3 class="projects__subtitle">React App</h3>
-                            <h1 class="projects__title">Scuba Quiz</h1>
-                            <div class="projects__img-container-box">
-                            <div class="projects__img-container-long">
-                                <img
+
+                         <!-- project card v1 3-01-Scuba-Quiz React App-->
+                          <article class="projects__cardV1 mix reactApp">
+                            <div class="shape shape__smaller"></div>
+                            <!-- info -->
+                            <div class="projects__cardV1-info">
+                                <p class="projects__cardV1-info-category">React App</p>
+                                <div class="projects__cardV1-info-techStack">
+                                    <span class="projects__cardV1-info-techStack-span">react</span>
+                                    <span class="projects__cardV1-info-techStack-span">styled-comp</span>
+                                </div>
+                            </div>
+                            <!-- image -->
+                            <div class="projects__cardV1-image-container">
+                                <div class="projects__cardV1-image-content">
+                                    <img
                                     src="./assets//img/websites/reactApp-01-53.Scuba-quiz-180.jpg"
                                     alt="react app"
-                                    class="projects__img"
+                                    class="projects__cardV1-image-img" 
                                 />
+                                </div>
                             </div>
-                        </div>
-                            <h3 class="projects__info-stack">
-                                react | styled-comp
-                            </h3>
-                            <h3 class="projects__info-desc">
-                                Scuba theory quiz app. <br /> 
-                                The data is fetched from api made with nodeJS, that is published on rapidAPI.
-                            </h3>
-                            <div class="projects__button-container">
-                                <button
-                                    class="projects__button projects__button1"
-                                >
-                                    <a href="#"
-                                        >View more
-                                        <i class="bx bx-chevrons-right"></i
-                                    ></a>
-                                </button>
-                                <button class="projects__button">
-                                    <a href="https://github.com/marizoo/react-scuba-quiz" target="_blank"
-                                        ><i class="bx bxl-github"></i
-                                    ></a>
-                                </button>
-                                <button class="projects__button">
-                                    <a href="https://youtu.be/EwuJUJcZ_MU" target="_blank"
-                                        ><i class="bx bxl-youtube"></i
-                                    ></a>
-                                </button>
+                            <!-- description -->
+                            <div class="projects__cardV1-desc-container">
+                                <p class="projects__cardV1-desc-title">Scuba Quiz</p>
+                                <ul class="projects__cardV1-desc-list">
+                                    <li class="projects__cardV1-desc-list-item">Scuba theory quiz app</li>
+                                    <li class="projects__cardV1-desc-list-item">data is fetched from API -</li>
+                                    <li class="projects__cardV1-desc-list-item">made with nodeJS</li>
+                                </ul>
                             </div>
-                        </article>
-                        <!-- Project Article 4-01-butterHelp Bootstrap-->
-                        <article class="projects__card mix bootstrap">
-                            <div class="shape shape__smaller"></div>
+                            <!-- buttons -->
+                            <div class="projects__cardV1-button-container">
+                                <div class="projects__cardV1-button-content">
+                                   
+                                    <div class="projects__cardV1-button-content-bottom">
+                                        <button onClick="toggleVideo301()" class="projects__cardV1-button-video" id="projects__cardV1-button-video">
+                                            <p class="projects__cardV1-button-text">Video</p>
+                                            <i class='bx bx-play-circle'></i>
+                                        </button>
+                                    <a  href="https://github.com/marizoo/react-scuba-quiz" target="_blank" class="projects__cardV1-button-github">
+                                        <p class="projects__cardV1-button-text">Github</p>
+                                        <i class="bx bxl-github"></i>
+                                    </a>
+                                    <a href="https://youtu.be/EwuJUJcZ_MU" target="_blank" class="projects__cardV1-button-youtube">
+                                        <p class="projects__cardV1-button-text">Youtube</p>
+                                        <i class="bx bxl-youtube"></i>
+                                    </a>
+                                </div>
+                                </div>
+                            </div>
+                        </article> 
+                        <!-- project card v1 301 end -->
+                        <!-- POP UP VIDEO 301 -->
+                        <div class="play-video-container301">
+                            <iframe width="710" height="423" class="play-video301" src="https://youtube.com/embed/EwuJUJcZ_MU" controls="true" autoplay="true"></iframe>
+                            <img src="./assets/img/icons/close.png" alt="close" class="play-video-closeIcon" onClick="toggleVideo301()">
+                        </div> 
+                        <!-- POP UP VIDEO END-->
+                        <!-- END project card v1 3-01-Scuba-Quiz React App-->
 
-                            <h3 class="projects__subtitle">Bootstrap</h3>
-                            <h1 class="projects__title">Butter Help</h1>
-                            <div class="projects__img-container-box">
-                            <div class="projects__img-container">
-                                <img
+
+                         <!-- project card v1 4-01-butterHelp Bootstrap-->
+                          <article class="projects__cardV1 mix bootstrap">
+                            <div class="shape shape__smaller"></div>
+                            <!-- info -->
+                            <div class="projects__cardV1-info">
+                                <p class="projects__cardV1-info-category">Bootstrap</p>
+                                <div class="projects__cardV1-info-techStack">
+                                    <span class="projects__cardV1-info-techStack-span">html</span>
+                                    <span class="projects__cardV1-info-techStack-span">css</span>
+                                    <span class="projects__cardV1-info-techStack-span">bootstrap</span>
+                                </div>
+                            </div>
+                            <!-- image -->
+                            <div class="projects__cardV1-image-container">
+                                <div class="projects__cardV1-image-content">
+                                    <img
                                     src="./assets/img/websites/02-BS-09.butter-180.jpg"
                                     alt="bootstrap"
-                                    class="projects__img"
+                                    class="projects__cardV1-image-img" 
                                 />
+                                </div>
                             </div>
-                        </div>
-                            <h3 class="projects__info-stack">
-                                html | css | bootstrap
-                            </h3>
-                            <h3 class="projects__info-desc">
-                                Business website <br />
-                                Therapy service
-                            </h3>
-                            <div class="projects__button-container">
-                                <button
-                                    class="projects__button projects__button1"
-                                >
-                                    <a href="#"
-                                        >View more
-                                        <i class="bx bx-chevrons-right"></i
-                                    ></a>
-                                </button>
-                                <button class="projects__button">
-                                    <a href="https://github.com/marizoo/butter-help" target="_blank"
-                                        ><i class="bx bxl-github"></i
-                                    ></a>
-                                </button>
-                                <button class="projects__button">
-                                    <a href="https://youtu.be/yEGIsgT1blM" target="_blank"
-                                        ><i class="bx bxl-youtube"></i
-                                    ></a>
-                                </button>
+                            <!-- description -->
+                            <div class="projects__cardV1-desc-container">
+                                <p class="projects__cardV1-desc-title">Butter Help</p>
+                                <ul class="projects__cardV1-desc-list">
+                                    <li class="projects__cardV1-desc-list-item">Business website</li>
+                                    <li class="projects__cardV1-desc-list-item">Therapy service</li>
+                                    <li class="projects__cardV1-desc-list-item">Responsive</li>
+                                </ul>
                             </div>
-                        </article>
-                        <!-- Project Article 4-02-zooBar Bootstrap-->
-                        <article class="projects__card mix bootstrap">
-                            <div class="shape shape__smaller"></div>
+                            <!-- buttons -->
+                            <div class="projects__cardV1-button-container">
+                                <div class="projects__cardV1-button-content">
+                                   
+                                    <div class="projects__cardV1-button-content-bottom">
+                                        <button onClick="toggleVideo401()" class="projects__cardV1-button-video" id="projects__cardV1-button-video">
+                                            <p class="projects__cardV1-button-text">Video</p>
+                                            <i class='bx bx-play-circle'></i>
+                                        </button>
+                                    <a href="https://github.com/marizoo/butter-help" target="_blank" class="projects__cardV1-button-github">
+                                        <p class="projects__cardV1-button-text">Github</p>
+                                        <i class="bx bxl-github"></i>
+                                    </a>
+                                    <a href="https://youtu.be/yEGIsgT1blM" target="_blank" class="projects__cardV1-button-youtube">
+                                        <p class="projects__cardV1-button-text">Youtube</p>
+                                        <i class="bx bxl-youtube"></i>
+                                    </a>
+                                </div>
+                                </div>
+                            </div>
+                        </article> 
+                        <!-- project card v1 401 end -->
+                        <!-- POP UP VIDEO 401 -->
+                        <div class="play-video-container401">
+                            <iframe width="710" height="423" class="play-video401" src="https://youtube.com/embed/yEGIsgT1blM" controls="true" autoplay="true"></iframe>
+                            <img src="./assets/img/icons/close.png" alt="close" class="play-video-closeIcon" onClick="toggleVideo401()">
+                        </div> 
+                        <!-- POP UP VIDEO END-->
+                        <!-- END project card v1 4-01-butterHelp Bootstrap-->
 
-                            <h3 class="projects__subtitle">Bootstrap</h3>
-                            <h1 class="projects__title">Zoo Bar</h1>
-                            <div class="projects__img-container-box">
-                            <div class="projects__img-container">
-                                <img
+
+                         <!-- project card v1 4-02-zooBar Bootstrap-->
+                          <article class="projects__cardV1 mix bootstrap">
+                            <div class="shape shape__smaller"></div>
+                            <!-- info -->
+                            <div class="projects__cardV1-info">
+                                <p class="projects__cardV1-info-category">Bootstrap</p>
+                                <div class="projects__cardV1-info-techStack">
+                                    <span class="projects__cardV1-info-techStack-span">html</span>
+                                    <span class="projects__cardV1-info-techStack-span">css</span>
+                                    <span class="projects__cardV1-info-techStack-span">bootstrap</span>
+                                </div>
+                            </div>
+                            <!-- image -->
+                            <div class="projects__cardV1-image-container">
+                                <div class="projects__cardV1-image-content">
+                                    <img
                                     src="./assets/img/websites/03-BS-09.zoobar-180.jpg"
                                     alt="bootstrap"
-                                    class="projects__img"
+                                    class="projects__cardV1-image-img" 
                                 />
+                                </div>
                             </div>
-                        </div>
-                            <h3 class="projects__info-stack">
-                                html | css | bootstrap
-                            </h3>
-                            <h3 class="projects__info-desc">
-                                Business website <br />
-                                Bar & Restaurant
-                            </h3>
-                            <div class="projects__button-container">
-                                <button
-                                    class="projects__button projects__button1"
-                                >
-                                    <a href="#"
-                                        >View more
-                                        <i class="bx bx-chevrons-right"></i
-                                    ></a>
-                                </button>
-                                <button class="projects__button">
-                                    <a href="https://github.com/marizoo/zoobar" target="_blank"
-                                        ><i class="bx bxl-github"></i
-                                    ></a>
-                                </button>
-                                <button class="projects__button">
-                                    <a href="https://youtu.be/0Rouvk3K6QI" target="_blank"
-                                        ><i class="bx bxl-youtube"></i
-                                    ></a>
-                                </button>
+                            <!-- description -->
+                            <div class="projects__cardV1-desc-container">
+                                <p class="projects__cardV1-desc-title">Zoo Bar</p>
+                                <ul class="projects__cardV1-desc-list">
+                                    <li class="projects__cardV1-desc-list-item">Business website</li>
+                                    <li class="projects__cardV1-desc-list-item">Bar & Restaurant</li>
+                                    <li class="projects__cardV1-desc-list-item">Responsive</li>
+                                </ul>
                             </div>
-                        </article>
-                        <!-- Project Article 4-03-Interior Bootstrap-->
-                        <article class="projects__card mix bootstrap">
-                            <div class="shape shape__smaller"></div>
+                            <!-- buttons -->
+                            <div class="projects__cardV1-button-container">
+                                <div class="projects__cardV1-button-content">
+                                   
+                                    <div class="projects__cardV1-button-content-bottom">
+                                        <button onClick="toggleVideo402()" class="projects__cardV1-button-video" id="projects__cardV1-button-video">
+                                            <p class="projects__cardV1-button-text">Video</p>
+                                            <i class='bx bx-play-circle'></i>
+                                        </button>
+                                    <a href="https://github.com/marizoo/zoobar" target="_blank" class="projects__cardV1-button-github">
+                                        <p class="projects__cardV1-button-text">Github</p>
+                                        <i class="bx bxl-github"></i>
+                                    </a>
+                                    <a href="https://youtu.be/0Rouvk3K6QI" target="_blank" class="projects__cardV1-button-youtube">
+                                        <p class="projects__cardV1-button-text">Youtube</p>
+                                        <i class="bx bxl-youtube"></i>
+                                    </a>
+                                </div>
+                                </div>
+                            </div>
+                        </article> 
+                        <!-- project card v1 402 end -->
+                        <!-- POP UP VIDEO 402 -->
+                        <div class="play-video-container402">
+                            <iframe width="710" height="423" class="play-video402" src="https://youtube.com/embed/0Rouvk3K6QI" controls="true" autoplay="true"></iframe>
+                            <img src="./assets/img/icons/close.png" alt="close" class="play-video-closeIcon" onClick="toggleVideo402()">
+                        </div> 
+                        <!-- POP UP VIDEO END-->
+                        <!-- END project card v1 4-02-zooBar Bootstrap-->
 
-                            <h3 class="projects__subtitle">Bootstrap</h3>
-                            <h1 class="projects__title">Interior Designer</h1>
-                            <div class="projects__img-container-box">
-                            <div class="projects__img-container">
-                                <img
+
+                         <!-- project card v1  4-03-Interior Bootstrap-->
+                          <article class="projects__cardV1 mix bootstrap">
+                            <div class="shape shape__smaller"></div>
+                            <!-- info -->
+                            <div class="projects__cardV1-info">
+                                <p class="projects__cardV1-info-category">Bootstrap</p>
+                                <div class="projects__cardV1-info-techStack">
+                                    <span class="projects__cardV1-info-techStack-span">html</span>
+                                    <span class="projects__cardV1-info-techStack-span">css</span>
+                                    <span class="projects__cardV1-info-techStack-span">bootstrap</span>
+                                </div>
+                            </div>
+                            <!-- image -->
+                            <div class="projects__cardV1-image-container">
+                                <div class="projects__cardV1-image-content">
+                                    <img
                                     src="./assets/img/websites/13-BS-bs.04.business-180.jpg"
                                     alt="bootstrap"
-                                    class="projects__img"
+                                    class="projects__cardV1-image-img" 
                                 />
+                                </div>
                             </div>
-                        </div>
-                            <h3 class="projects__info-stack">
-                                html | css | bootstrap
-                            </h3>
-                            <h3 class="projects__info-desc">
-                                Business website
-                                <br /> 
-                                Interior Design Service
-                            </h3>
-                            <div class="projects__button-container">
-                                <button
-                                    class="projects__button projects__button1"
-                                >
-                                    <a href="#"
-                                        >View more
-                                        <i class="bx bx-chevrons-right"></i
-                                    ></a>
-                                </button>
-                                <button class="projects__button">
-                                    <a href="https://github.com/marizoo/animated-website" target="_blank"
-                                        ><i class="bx bxl-github"></i
-                                    ></a>
-                                </button>
-                                <button class="projects__button">
-                                    <a href="https://youtu.be/PvXD-IraTr4" target="_blank"
-                                        ><i class="bx bxl-youtube"></i
-                                    ></a>
-                                </button>
+                            <!-- description -->
+                            <div class="projects__cardV1-desc-container">
+                                <p class="projects__cardV1-desc-title">Izoo</p>
+                                <ul class="projects__cardV1-desc-list">
+                                    <li class="projects__cardV1-desc-list-item">Business website</li>
+                                    <li class="projects__cardV1-desc-list-item">Interior designer</li>
+                                    <li class="projects__cardV1-desc-list-item">Responsive</li>
+                                </ul>
                             </div>
-                        </article>
-                        <!-- Project Article 5-01-Scuba API-->
-                        <article class="projects__card-long mix api">
-                            <div class="shape shape__smaller"></div>
-
-                            <h3 class="projects__subtitle">API with nodeJs</h3>
-                            <h1 class="projects__title">Scuba Diving Theory</h1>
-                            <div class="projects__img-container-box">
-                            <div class="projects__img-container-long">
-                                <img
-                                    src="./assets/img/websites/api-01-scuba-all-200.jpg"
-                                    alt="API with nodeJs"
-                                    class="projects__img"
-                                />
-                            </div>
-                        </div>
-                            <h3 class="projects__info-stack">
-                                nodeJs | rapidAPI
-                            </h3>
-                            <h3 class="projects__info-desc">
-                                A scuba theory data <br />
-                                Made with nodeJS <br /> Published on rapid API
-                            </h3>
-                            <div class="projects__button-container">
-                                <button
-                                    class="projects__button projects__button1"
-                                >
-                                    <a href="#"
-                                        >View more
-                                        <i class="bx bx-chevrons-right"></i
-                                    ></a>
-                                </button>
-                                <button class="projects__button">
-                                    <a href="https://github.com/marizoo/scuba-quiz-api" target="_blank"
-                                        ><i class="bx bxl-github"></i
-                                    ></a>
-                                </button>
-                                <button class="projects__button">
-                                    <a href="https://rapidapi.com/mariza24/api/scuba-diving-quiz-version-101/" target="_blank"
-                                        ><i class='bx bx-code'></i>
+                            <!-- buttons -->
+                            <div class="projects__cardV1-button-container">
+                                <div class="projects__cardV1-button-content">
+                                   
+                                    <div class="projects__cardV1-button-content-bottom">
+                                        <button onClick="toggleVideo403()" class="projects__cardV1-button-video" id="projects__cardV1-button-video">
+                                            <p class="projects__cardV1-button-text">Video</p>
+                                            <i class='bx bx-play-circle'></i>
+                                        </button>
+                                    <a href="https://github.com/marizoo/animated-website" target="_blank" class="projects__cardV1-button-github">
+                                        <p class="projects__cardV1-button-text">Github</p>
+                                        <i class="bx bxl-github"></i>
                                     </a>
-                                </button>
+                                    <a href="https://youtu.be/PvXD-IraTr4" target="_blank" class="projects__cardV1-button-youtube">
+                                        <p class="projects__cardV1-button-text">Youtube</p>
+                                        <i class="bx bxl-youtube"></i>
+                                    </a>
+                                </div>
+                                </div>
                             </div>
-                        </article>
-                        <!-- Project Article End -->
+                        </article> 
+                        <!-- project card v1 403 end -->
+                        <!-- POP UP VIDEO 403 -->
+                        <div class="play-video-container403">
+                            <iframe width="710" height="423" class="play-video403" src="https://youtube.com/embed/PvXD-IraTr4" controls="true" autoplay="true"></iframe>
+                            <img src="./assets/img/icons/close.png" alt="close" class="play-video-closeIcon" onClick="toggleVideo403()">
+                        </div> 
+                        <!-- POP UP VIDEO END-->
+                        <!-- END project card v1  4-03-Interior Bootstrap-->
+
+
+                         <!-- project card v1  5-01-Scuba API-->
+                          <article class="projects__cardV1 mix api">
+                            <div class="shape shape__smaller"></div>
+                            <!-- info -->
+                            <div class="projects__cardV1-info">
+                                <p class="projects__cardV1-info-category">API with nodeJS</p>
+                                <div class="projects__cardV1-info-techStack">
+                                    <span class="projects__cardV1-info-techStack-span">nodeJS</span>
+                                    <span class="projects__cardV1-info-techStack-span">express</span>
+                                    <span class="projects__cardV1-info-techStack-span">API</span>
+                                </div>
+                            </div>
+                            <!-- image -->
+                            <div class="projects__cardV1-image-container">
+                                <div class="projects__cardV1-image-content">
+                                    <img
+                                    src="./assets/img/websites/api-01-scuba-180-all.jpg"
+                                    alt="API with nodeJs"
+                                    class="projects__cardV1-image-img" 
+                                />
+                                </div>
+                            </div>
+                            <!-- description -->
+                            <div class="projects__cardV1-desc-container">
+                                <p class="projects__cardV1-desc-title">Scuba quiz v.101</p>
+                                <ul class="projects__cardV1-desc-list">
+                                    <li class="projects__cardV1-desc-list-item">Scuba diving theory data</li>
+                                    <li class="projects__cardV1-desc-list-item">Made with nodeJS</li>
+                                    <li class="projects__cardV1-desc-list-item">Published on rapid API</li>
+                                </ul>
+                            </div>
+                            <!-- buttons -->
+                            <div class="projects__cardV1-button-container">
+                                <div class="projects__cardV1-button-content">
+                                   
+                                    <div class="projects__cardV1-button-content-bottom">
+                                        <button onClick="toggleVideo501()" class="projects__cardV1-button-video" id="projects__cardV1-button-video">
+                                            <p class="projects__cardV1-button-text">Video</p>
+                                            <i class='bx bx-play-circle'></i>
+                                        </button>
+                                    <a href="https://github.com/marizoo/scuba-quiz-api" target="_blank" class="projects__cardV1-button-github">
+                                        <p class="projects__cardV1-button-text">Github</p>
+                                        <i class="bx bxl-github"></i>
+                                    </a>
+                                    <a href="https://rapidapi.com/mariza24/api/scuba-diving-quiz-version-101/" target="_blank" class="projects__cardV1-button-youtube">
+                                        <p class="projects__cardV1-button-text">API</p>
+                                        <i class='bx bx-code'></i>
+                                    </a>
+                                </div>
+                                </div>
+                            </div>
+                        </article> 
+                        <!-- project card v1 501 end -->
+                        <!-- POP UP VIDEO 501 -->
+                        <div class="play-video-container501">
+                            <iframe width="710" height="423" class="play-video501" src="https://youtube.com/embed/EwuJUJcZ_MU" controls="true" autoplay="true"></iframe>
+                            <img src="./assets/img/icons/close.png" alt="close" class="play-video-closeIcon" onClick="toggleVideo501()">
+                        </div> 
+                        <!-- POP UP VIDEO END-->
+                        <!-- END project card v1  5-01-Scuba API-->
+
                     </div>
                 </div>
             </section>
@@ -698,12 +892,10 @@
                 <div class="about__story-Container">
                     <div class="about__story-desc">
                         <p class="about__story-desc-p">
-                            Marizoo gets her dopamine dope from building user interfaces and conquering her self-made bugs. 
-                        She is an introvert, but certain topics and individuals can magically turn her into a chatterbox... <br />
-                         Being outdoors, furbabies, sports and 'Suzuki Katana' car excites her!
-                        <br />
-                            Indoors, she'll be in rabbit holes / cooking / reading / doing 'diy' projects while impersonating 'Marie Kondo' and 'Whitney Houston'.
-                            
+                            Marizoo gets her dopamine dope from building user interfaces and conquering bugs.
+                         Being outdoors, sports, furbabies and 'Suzuki Katana' car excites her!
+                        
+                            At home, she'll be in rabbit holes or working on her 'diy' projects while impersonating 'Marie Kondo' and 'Whitney Houston'.
                         </p>
                     </div>
                 </div>
@@ -721,7 +913,7 @@
                         </div>
                         <div class="about__card-img-container">
                             <img
-                                src="./assets/img/photos/img-marizoo.jpg"
+                                src="./assets/img/photos/img-mariza-motor.jpg"
                                 alt="marizoo"
                                 class="about__card-img"
                             />
@@ -731,9 +923,6 @@
                             <h4 class="about__card-data-title">Tech Stack</h4>
 
                             <div class="about__card-data-tech">
-                                <!-- <div class="about__card-data-group">
-                                    <i class="bx bxl-html5"></i> html
-                                </div> -->
                                 <div class="about__card-data-group">
                                     <i class="bx bxl-css3"></i> html | css
                                 </div>
@@ -772,6 +961,7 @@
                             </button>
                         </div>
                     </article>
+                    
                     <!-- Card 2 connect -->
                     <article>
                     <div class="about__card">
@@ -867,7 +1057,7 @@
                             </button>
                         </div>
                     </article>
-                    <!-- Card 3 employment -->
+                    <!-- Card 4 employment -->
                     <article class="about__card">
                         <div class="shape shape__smaller"></div>
                         <div class="about__card-top-container">
@@ -933,15 +1123,19 @@
                 </div>
             </section>
 
-            <!--==================== CONTACT ME ====================-->
+            <!--==================== CONTACT ME WEB3FORMS====================-->
             <section class="contact section" id="contact">
                 <h2 class="section__title">Send a message</h2>
                 <p class="section__subtitle">She'll be happy to hear from you</p>
 
 
                 <div class="contact__container container grid">
-                    <form id="contact-form" class="contact__form">
-                        <input type="hidden" name="contact_number" />
+                    <form method="POST" id="contact-form" class="contact__form">
+                        <input type="hidden" name="access_key" value="ACCESS_KEY">
+                        <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                        <input type="checkbox" name="botcheck" id="" style="display: none" />
+                       
+
                         <label for="name" class="contact__form-label"
                             >Name</label
                         >
@@ -950,7 +1144,7 @@
                             required
                             class="contact__form-input"
                             type="text"
-                            name="user_name"
+                            name="name"
                             id="name"
                         />
                         <label for="email" class="contact__form-label"
@@ -961,7 +1155,7 @@
                             required
                             class="contact__form-input"
                             type="email"
-                            name="user_email"
+                            name="email"
                             id="email"
                         />
                         <label for="subject" class="contact__form-label"
@@ -971,7 +1165,7 @@
                             placeholder="subject..."
                             class="contact__form-input"
                             type="text"
-                            name="user_subject"
+                            name="subject"
                             id="subject"
                         />
                         <label
@@ -992,9 +1186,12 @@
                             type="submit"
                             value="Send"
                         />
+                        <div class="form__send-status" id="result"></div>
+                        
                     </form>
                 </div>
             </section>
+                
         </main>
         <!--==================== FOOTER ====================-->
         <footer class="footer section">
@@ -1046,21 +1243,21 @@
                             <i class="bx bxl-youtube"></i>
                         </a>
                         <a
-                            href="https://twitter.com/_marizoo"
+                            href="#"
                             target="_blank"
                             class="footer__social-link"
                         >
                             <i class="bx bxl-twitter"></i>
                         </a>
                         <a
-                            href="https://dev.to/marizoo"
+                            href="#"
                             target="_blank"
                             class="footer__social-link"
                         >
                             <i class="bx bxl-dev-to"></i>
                         </a>
                         <a
-                            href="https://medium.com/@marizoo"
+                            href="#"
                             target="_blank"
                             class="footer__social-link"
                         >
@@ -1134,27 +1331,20 @@
                 </div>
             </div>
 
-            <div class="footer__copy">😎 Marizoo &copy; All Rights Reserved</div>
-            <div class="footer__copy1"> This site is vanilla flavored | click here for the <a target="_blank" href="https://github.com/marizoo/vanilla-website-marizoo-portfolio"><span class="footer__copy-link">github repo</span></a> </div>
+            <div class="footer__copy-container">
+            <p class="footer__copy">😎 Marizoo &copy; All Rights Reserved</p>
+            <p class="footer__copy1"> This site is vanilla flavored. Click here for the <a target="_blank" href="https://github.com/marizoo/vanilla-website-marizoo-portfolio"><span class="footer__copy-link">github repo</span></a> </p>
+            <p class="footer__copy2">Pardon her 'unrelated to tech' photos, that is all she has... Besides, she might have a 'resting bitch face' when she is coding... </p>
+            <p class="footer__copy3">Why would you want to see that? &#x1F61D;</p>
+            </div>
         </footer>
 
         <!--========== SCROLL UP ==========-->
         <a href="#home" class="scrollup" id="scroll-up">
             <i class="bx bx-up-arrow-alt"></i>
         </a>
-
-        <!--=============== EMAIL JS ===============-->
-        <script
-            type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-        ></script>
-        <script type="text/javascript">
-            (function () {
-                emailjs.init("USER_ID");
-            })();
-        </script>
         <!--=============== SCROLL REVEAL ===============-->
-        <!-- <script src="./assets/js/scrollreveal.min.js"></script> -->
+        <script src="./assets/js/scrollreveal.min.js"></script>
 
         <!--=============== SWIPER JS ===============-->
         <script src="./assets/js/swiper-bundle.min.js"></script>
@@ -1166,3 +1356,4 @@
         <script src="./assets/js/main.js"></script>
     </body>
 </html>
+
