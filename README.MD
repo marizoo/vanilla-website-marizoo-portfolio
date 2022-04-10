@@ -10,8 +10,6 @@
 - Libraries:
     - swiperjs
     - mixitupjs
-    - Web3Forms
-
 ## WHY VANILLA?
 - I am working with slow internet connection (less than 1mbps).
 - Also, I wanted my portfolio to be "low-maintenance" so I can focus working on projects & my learning.

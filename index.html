@@ -46,7 +46,7 @@
                             <a href="#about" class="nav__link">About</a>
                         </li>
                         <li class="nav__menu-list-item">
-                            <a href="#contact" class="nav__link">Contact Me</a>
+                            <a href="#contact" class="nav__link contact_link">Contact Me</a>
                         </li>
                     </ul>
                     <!-- Close Icon -->
@@ -1130,11 +1130,11 @@
 
 
                 <div class="contact__container container grid">
-                    <form method="POST" id="contact-form" class="contact__form">
-                        <input type="hidden" name="access_key" value="ACCESS_KEY">
-                        <input type="hidden" name="subject" value="New Submission from Web3Forms" />
-                        <input type="checkbox" name="botcheck" id="" style="display: none" />
-                       
+
+                    <form  name="contact"
+                    method="POST"
+                    data-netlify-recaptcha="true"
+                    data-netlify="true" class="contact__form">
 
                         <label for="name" class="contact__form-label"
                             >Name</label
@@ -1145,7 +1145,7 @@
                             class="contact__form-input"
                             type="text"
                             name="name"
-                            id="name"
+                            
                         />
                         <label for="email" class="contact__form-label"
                             >Email</label
@@ -1156,7 +1156,7 @@
                             class="contact__form-input"
                             type="email"
                             name="email"
-                            id="email"
+                            
                         />
                         <label for="subject" class="contact__form-label"
                             >Subject</label
@@ -1166,10 +1166,9 @@
                             class="contact__form-input"
                             type="text"
                             name="subject"
-                            id="subject"
+                            required
                         />
                         <label
-                            required
                             for="message"
                             class="contact__form-label"
                             >Message</label
@@ -1179,14 +1178,15 @@
                             required
                             class="contact__form-textarea"
                             name="message"
-                            id="message"
+                            
                         ></textarea>
-                        <input
+
+                        <div data-netlify-recaptcha="true"></div>
+
+                        <button
                             class="button contact__form-button"
                             type="submit"
-                            value="Send"
-                        />
-                        <div class="form__send-status" id="result"></div>
+                        >Send Message</button>
                         
                     </form>
                 </div>

@@ -405,7 +405,7 @@
     row-gap: 0rem;
     column-gap: 5%;
     align-items: center;
-    margin-right: 24%;
+    margin-right: 250px;
     font-size: var(--fz-smaller);
   }
   .nav__link{
@@ -414,6 +414,9 @@
     font-size: .75rem;
 }
   .nav__toggle{
+    display: none;
+  }
+  .contact_link{
     display: none;
   }
   .nav__theme{
